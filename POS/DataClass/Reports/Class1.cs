@@ -164,13 +164,15 @@ namespace DataClass
                     qry += " (subTotalWithTax + shippingWithTax)/100 AS NetTotal, ";
                     qry += " st.name AS DeliveryTime, ";
                     qry += " customFieldsOtherinstructions AS CuttingInstructions, ";
+                    qry += " COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '' ) AS PaymentMode,";
                     qry += " 1 AS OrdNo, ";
                     qry += " CustomerId, ";
                     qry += " '' AS Pincode, ";
                     qry += " py.metadata, ";
                     qry += " '' AS PaymentStatus,";
                    qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
-                    qry += "O.couponCodes AS CouponCode";
+                    qry += "O.couponCodes AS CouponCode,";
+                    qry += "om.note AS Note";
                     qry += " FROM " + CommonView.DataBase + ".`order` O ";
                     qry += " INNER JOIN " + CommonView.DataBase + ".order_line OL ON O.ID = OL.ORDERID ";
                     qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_translation P ON OL.PRODUCTVARIANTID = P.ID ";
@@ -180,10 +182,13 @@ namespace DataClass
                     qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
                     qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
                     qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
+                    qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
+                    qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
                     //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " AND customFieldsClientrequesttocanceL = 0 ";
-                    qry += " AND O.State NOT IN ('DELIVERED','CANCELLED','AddingItems') and ";
+                    qry += " AND py.state IN('Settled','Authorized')";
+                    qry += " AND O.State NOT IN ('DELIVERED','CANCELLED','AddingItems') and  ";
 
                     if (locationId == 4) //|| locationId==1) 
                     { qry += " st.name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and "; }
@@ -239,13 +244,15 @@ namespace DataClass
                         qry += " (subTotalWithTax + shippingWithTax)/100 AS NetTotal, ";
                         qry += " st.name AS DeliveryTime, ";
                         qry += " customFieldsOtherinstructions AS CuttingInstructions, ";
+                        qry += " COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '' ) AS PaymentMode,";
                         qry += " 2 AS OrdNo, ";
                         qry += " CustomerId, ";
                         qry += " '' AS Pincode, ";
                         qry += " py.metadata, ";
                         qry += " '' AS PaymentStatus, ";
                         qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
-                        qry += "O.couponCodes AS CouponCode";
+                        qry += "O.couponCodes AS CouponCode,";
+                        qry += "om.note AS Note";
                         qry += " FROM " + CommonView.DataBase + ".`order` O ";
                         qry += " INNER JOIN " + CommonView.DataBase + ".order_line OL ON O.ID = OL.ORDERID ";
                         qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_translation P ON OL.PRODUCTVARIANTID = P.ID ";
@@ -255,9 +262,11 @@ namespace DataClass
                         qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
                         qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
                         qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
+                        qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
+                        qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
                         // qry += " Where customFieldsPlacedatistformatted between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
                         qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
-                        qry += " customFieldsClientrequesttocanceL=0 and O.State not in ('DELIVERED','CANCELLED','AddingItems') and ";
+                        qry += " customFieldsClientrequesttocanceL=0 and py.state IN('Settled','Authorized') AND O.State not in ('DELIVERED','CANCELLED','AddingItems') and ";
                         if (locationId == 4) { qry += " st.name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  and "; }
                         qry += " ch.ChannelId=" + locationId; //and S.Cancelled=0";
                         //  qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
@@ -272,7 +281,7 @@ namespace DataClass
                 else if (timeType == "LESS")
                 {
                     qry = " Select * from (";
-                    qry += " SELECT O.iD,SKU AS PCODE,DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer,'' as Address,'' as CellNo,trim(p.NAME) as ItemName,'' as TamilName,count(LineId) as Qty,PV.customFieldsShadowprice/100 AS ShadowPrice,s.ListPrice/100 as Rate, (Count(LineId)*(s.Listprice/100)) as as Total,subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping,(subTotalWithTax+shippingWithTax)/100 as NetTotal,st.Name as DeliveryTime,customFieldsOtherinstructions as CuttingInstructions,1 as OrdNo,CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus ,";
+                    qry += " SELECT O.iD,SKU AS PCODE,DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer,'' as Address,'' as CellNo,trim(p.NAME) as ItemName,'' as TamilName,count(LineId) as Qty,PV.customFieldsShadowprice/100 AS ShadowPrice,s.ListPrice/100 as Rate, (Count(LineId)*(s.Listprice/100)) as as Total,subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping,(subTotalWithTax+shippingWithTax)/100 as NetTotal,st.Name as DeliveryTime,COALESCE((SELECT CAST(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')) AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci FROM " + CommonView.DataBase + ".history_entry he WHERE he.orderId=O.Id AND he.type='ORDER_NOTE' ORDER BY he.updatedAt DESC LIMIT 1), CAST(O.customFieldsOtherinstructions AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci, CAST('' AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci) COLLATE utf8mb4_unicode_ci as PaymentMode,customFieldsOtherinstructions as CuttingInstructions,1 as OrdNo,CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus ,";
                     qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
                     qry += "O.couponCodes AS CouponCode";
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".order_item S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
@@ -282,7 +291,7 @@ namespace DataClass
                     qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
                     qry += " CustomerId,py.metadata,s.ListPrice,p.name ";
                     qry += " Union All";
-                    qry += " SELECT O.iD,SKU AS PCODE,DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer,'' as Address,'' as CellNo,trim(p.NAME) as ItemName,'' as TamilName,count(LineId) as Qty,PV.customFieldsShadowprice/100 AS ShadowPrice,s.ListPrice/100 as Rate, (Count(LineId)*(s.Listprice/100)) as Total,subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping,(subTotalWithTax+shippingWithTax)/100 as NetTotal,st.Name as DeliveryTime,customFieldsOtherinstructions as CuttingInstructions,2 as OrdNo,CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus,";
+                    qry += " SELECT O.iD,SKU AS PCODE,DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer,'' as Address,'' as CellNo,trim(p.NAME) as ItemName,'' as TamilName,count(LineId) as Qty,PV.customFieldsShadowprice/100 AS ShadowPrice,s.ListPrice/100 as Rate, (Count(LineId)*(s.Listprice/100)) as Total,subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping,(subTotalWithTax+shippingWithTax)/100 as NetTotal,st.Name as DeliveryTime,COALESCE((SELECT CAST(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')) AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci FROM " + CommonView.DataBase + ".history_entry he WHERE he.orderId=O.Id AND he.type='ORDER_NOTE' ORDER BY he.updatedAt DESC LIMIT 1), CAST(O.customFieldsOtherinstructions AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci, CAST('' AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci) COLLATE utf8mb4_unicode_ci as PaymentMode,customFieldsOtherinstructions as CuttingInstructions,2 as OrdNo,CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus,";
                     qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
                     qry += "O.couponCodes AS CouponCode";
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
@@ -295,7 +304,7 @@ namespace DataClass
                 else if (timeType == "GREATER")
                 {
                     qry = " Select * from (";
-                    qry += " SELECT O.iD,SKU AS PCODE,DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer,'' as Address,'' as CellNo,trim(p.NAME) as ItemName,'' as TamilName,count(LineId) as Qty,PV.customFieldsShadowprice/100 AS ShadowPrice,s.ListPrice/100 as Rate, (Count(LineId)*(s.Listprice/100)) as as Total,subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping,(subTotalWithTax+shippingWithTax)/100 as NetTotal,st.Name as DeliveryTime,customFieldsOtherinstructions as CuttingInstructions,1 as OrdNo,CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus ,";
+                    qry += " SELECT O.iD,SKU AS PCODE,DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer,'' as Address,'' as CellNo,trim(p.NAME) as ItemName,'' as TamilName,count(LineId) as Qty,s.ListPrice/100 as Rate, (Count(LineId)*(s.Listprice/100)) as as Total,subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping,(subTotalWithTax+shippingWithTax)/100 as NetTotal,st.Name as DeliveryTime,COALESCE((SELECT CAST(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')) AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci FROM " + CommonView.DataBase + ".history_entry he WHERE he.orderId=O.Id AND he.type='ORDER_NOTE' ORDER BY he.updatedAt DESC LIMIT 1), CAST(O.customFieldsOtherinstructions AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci, CAST('' AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci) COLLATE utf8mb4_unicode_ci as PaymentMode,customFieldsOtherinstructions as CuttingInstructions,1 as OrdNo,CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus ,";
                     qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
                     qry += "O.couponCodes AS CouponCode";
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
@@ -304,7 +313,7 @@ namespace DataClass
                     qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
                     qry += " CustomerId,py.metadata,s.ListPrice,p.name ";
                     qry += " Union All";
-                    qry += " SELECT O.iD,SKU AS PCODE,DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer,'' as Address,'' as CellNo,trim(p.NAME) as ItemName,'' as TamilName,count(LineId) as Qty,PV.customFieldsShadowprice/100 AS ShadowPrice,s.ListPrice/100 as Rate, (Count(LineId)*(s.Listprice/100)) as Total,subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping,(subTotalWithTax+shippingWithTax)/100 as NetTotal,st.Name as DeliveryTime,customFieldsOtherinstructions as CuttingInstructions,2 as OrdNo,CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus,";
+                    qry += " SELECT O.iD,SKU AS PCODE,DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer,'' as Address,'' as CellNo,trim(p.NAME) as ItemName,'' as TamilName,count(LineId) as Qty,s.ListPrice/100 as Rate, (Count(LineId)*(s.Listprice/100)) as as Total,subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping,(subTotalWithTax+shippingWithTax)/100 as NetTotal,st.Name as DeliveryTime,COALESCE((SELECT CAST(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')) AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci FROM " + CommonView.DataBase + ".history_entry he WHERE he.orderId=O.Id AND he.type='ORDER_NOTE' ORDER BY he.updatedAt DESC LIMIT 1), CAST(O.customFieldsOtherinstructions AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci, CAST('' AS CHAR(1000) CHARACTER SET utf8mb4) COLLATE utf8mb4_unicode_ci) COLLATE utf8mb4_unicode_ci as PaymentMode,customFieldsOtherinstructions as CuttingInstructions,2 as OrdNo,CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus,";
                     qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
                     qry += "O.couponCodes AS CouponCode";
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
@@ -665,7 +674,7 @@ namespace DataClass
                 string qry = "";
 
                 qry = " Select * from (";
-                qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,1 as OrdNo, CustomerId,'' as Pincode,'' as PaymentStatus";
+                qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions as CuttingInstructions,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,1 as OrdNo, CustomerId,'' as Pincode,'' as PaymentStatus";
                 // qry += " FROM " + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL,";
                 // qry += CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st," + CommonView.DataBase + ".product_variant PV, ";
                 // qry += " " + CommonView.DataBase + ".product_variant_price op,";
@@ -684,6 +693,7 @@ namespace DataClass
                 qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
                 qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
                 qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
+               
                 //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                 qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                 qry += " and customFieldsClientrequesttocanceL=0 and O.State not in ('DELIVERED','CANCELLED','AddingItems') and ";
@@ -695,7 +705,7 @@ namespace DataClass
                 if (locationId == 4)
                 {
                     qry += " Union All";
-                    qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,2 as OrdNo,CustomerId,'' as Pincode,'' as PaymentStatus ";
+                    qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions as CuttingInstructions,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,2 as OrdNo,CustomerId,'' as Pincode,'' as PaymentStatus";
                     // qry += " FROM " + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
                     // qry += " " + CommonView.DataBase + ".product_variant_price op," + CommonView.DataBase + ".product_variant PV, ";
                     // qry += CommonView.DataBase + ".order O ";
@@ -712,7 +722,7 @@ namespace DataClass
                     qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
                     qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
                     qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
-                    //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                   //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " and customFieldsClientrequesttocanceL=0 and O.State not in ('DELIVERED','CANCELLED') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  ";
                     qry += " and ch.ChannelId= " + locationId;
@@ -904,14 +914,16 @@ namespace DataClass
             tmp.Add(CommonView.GetGridViewColumn("NetTotal", "NetTotal", 70, 20, true, DataGridViewContentAlignment.MiddleRight, "####0.00"));
             tmp.Add(CommonView.GetGridViewColumn("DeliveryTime", "DeliveryTime", 200, 21, true));
             tmp.Add(CommonView.GetGridViewColumn("CuttingInstructions", "CuttingInstructions", 180, 22, true));
-            tmp.Add(CommonView.GetGridViewColumn("SNo", "SNo", 90, 23, true));
-            tmp.Add(CommonView.GetGridViewColumn("CustomerId", "CustomerId", 0, 24, true));
-            tmp.Add(CommonView.GetGridViewColumn("Pincode", "Pincode", 90, 25, true));
-            tmp.Add(CommonView.GetGridViewColumn("OrdNo", "OrdNo", 0, 26, true));
-            tmp.Add(CommonView.GetGridViewColumn("MetaData", "MetaData", 0, 27, true));
-            tmp.Add(CommonView.GetGridViewColumn("PaymentStatus", "PaymentStatus", 0, 28, true));
-            tmp.Add(CommonView.GetGridViewColumn("RewardPointUsed", "RewardPointUsed",100, 29, true));
-            tmp.Add(CommonView.GetGridViewColumn("CouponCode", "CouponCode", 100, 30, true));
+            tmp.Add(CommonView.GetGridViewColumn("PaymentMode", "PaymentMode", 100, 23, true));
+            tmp.Add(CommonView.GetGridViewColumn("SNo", "SNo", 90, 24, true));
+            tmp.Add(CommonView.GetGridViewColumn("CustomerId", "CustomerId", 0, 25, true));
+            tmp.Add(CommonView.GetGridViewColumn("Pincode", "Pincode", 90, 26, true));
+            tmp.Add(CommonView.GetGridViewColumn("OrdNo", "OrdNo", 0, 27, true));
+            tmp.Add(CommonView.GetGridViewColumn("MetaData", "MetaData", 0, 28, true));
+            tmp.Add(CommonView.GetGridViewColumn("PaymentStatus", "PaymentStatus", 100, 29, true));
+            tmp.Add(CommonView.GetGridViewColumn("RewardPointUsed", "RewardPointUsed",100, 30, true));
+            tmp.Add(CommonView.GetGridViewColumn("CouponCode", "CouponCode", 100, 31, true));
+            tmp.Add(CommonView.GetGridViewColumn("Note", "Note", 100, 32, true));
             tmp.GetFirstColumn(DataGridViewElementStates.None).Visible = false;
         }
 

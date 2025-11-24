@@ -4,7 +4,6 @@
 	<DataBase>wow_vendure</DataBase>
 	<UserId>root</UserId>
 <Pwd>123456</Pwd>
-        <Port>3306</Port>
-               <SMS>1</SMS> 
+        <Port>3306</Port>  
+<sms>0</sms>     
 </ConnInFo>
-  

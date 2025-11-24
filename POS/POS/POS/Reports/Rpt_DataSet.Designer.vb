@@ -6514,6 +6514,12 @@ Partial Public Class Rpt_DataSet
 
         Private columnShadowPrice As Global.System.Data.DataColumn
 
+        Private columnPaymentMode As Global.System.Data.DataColumn
+
+        Private columnPaymentStatus As Global.System.Data.DataColumn
+
+        Private columnNote As Global.System.Data.DataColumn
+
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
@@ -6766,6 +6772,30 @@ Partial Public Class Rpt_DataSet
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property PaymentModeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPaymentMode
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property PaymentStatusColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPaymentStatus
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property NoteColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnNote
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Browsable(False)> _
         Public ReadOnly Property Count() As Integer
@@ -6829,9 +6859,12 @@ Partial Public Class Rpt_DataSet
                     ByVal GroupName As String, _
                     ByVal RewardPointUsed As Integer, _
                     ByVal CouponCode As String, _
-                    ByVal ShadowPrice As Decimal) As Qry_OrderRptRow
+                    ByVal ShadowPrice As Decimal, _
+                    ByVal PaymentMode As String, _
+                    ByVal PaymentStatus As String, _
+                    ByVal Note As String) As Qry_OrderRptRow
             Dim rowQry_OrderRptRow As Qry_OrderRptRow = CType(Me.NewRow, Qry_OrderRptRow)
-            Dim columnValuesArray() As Object = New Object() {Id, _Date, Code, Time, Customer, Address, NetTotal, CellNo, Pincode, Qty, ItemName, GSTNo, DeliveryTime, CuttingInstructions, SNo, TamilName, Rate, Total, Shipping, SubTotal, Category, OrdNo, SlNo, GroupName, RewardPointUsed, CouponCode, ShadowPrice}
+            Dim columnValuesArray() As Object = New Object() {Id, _Date, Code, Time, Customer, Address, NetTotal, CellNo, Pincode, Qty, ItemName, GSTNo, DeliveryTime, CuttingInstructions, SNo, TamilName, Rate, Total, Shipping, SubTotal, Category, OrdNo, SlNo, GroupName, RewardPointUsed, CouponCode, ShadowPrice, PaymentMode, PaymentStatus, Note}
             rowQry_OrderRptRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowQry_OrderRptRow)
             Return rowQry_OrderRptRow
@@ -6881,6 +6914,9 @@ Partial Public Class Rpt_DataSet
             Me.columnRewardPointUsed = MyBase.Columns("RewardPointUsed")
             Me.columnCouponCode = MyBase.Columns("CouponCode")
             Me.columnShadowPrice = MyBase.Columns("ShadowPrice")
+            Me.columnPaymentMode = MyBase.Columns("PaymentMode")
+            Me.columnPaymentStatus = MyBase.Columns("PaymentStatus")
+            Me.columnNote = MyBase.Columns("Note")
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -6943,6 +6979,12 @@ Partial Public Class Rpt_DataSet
             MyBase.Columns.Add(Me.columnCouponCode)
             Me.columnShadowPrice = New Global.System.Data.DataColumn("ShadowPrice", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnShadowPrice)
+            Me.columnPaymentMode = New Global.System.Data.DataColumn("PaymentMode", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPaymentMode)
+            Me.columnPaymentStatus = New Global.System.Data.DataColumn("PaymentStatus", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPaymentStatus)
+            Me.columnNote = New Global.System.Data.DataColumn("Note", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNote)
             Me.columnId.AllowDBNull = False
             Me.columnDate.AllowDBNull = False
             Me.columnTime.AllowDBNull = False
@@ -12438,6 +12480,51 @@ Partial Public Class Rpt_DataSet
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property PaymentMode() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableQry_OrderRpt.PaymentModeColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'PaymentMode' in table 'Qry_OrderRpt' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableQry_OrderRpt.PaymentModeColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property PaymentStatus() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableQry_OrderRpt.PaymentStatusColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'PaymentStatus' in table 'Qry_OrderRpt' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableQry_OrderRpt.PaymentStatusColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property Note() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableQry_OrderRpt.NoteColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Note' in table 'Qry_OrderRpt' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableQry_OrderRpt.NoteColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Function IsCodeNull() As Boolean
             Return Me.IsNull(Me.tableQry_OrderRpt.CodeColumn)
         End Function
@@ -12710,6 +12797,42 @@ Partial Public Class Rpt_DataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub SetShadowPriceNull()
             Me(Me.tableQry_OrderRpt.ShadowPriceColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsPaymentModeNull() As Boolean
+            Return Me.IsNull(Me.tableQry_OrderRpt.PaymentModeColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetPaymentModeNull()
+            Me(Me.tableQry_OrderRpt.PaymentModeColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsPaymentStatusNull() As Boolean
+            Return Me.IsNull(Me.tableQry_OrderRpt.PaymentStatusColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetPaymentStatusNull()
+            Me(Me.tableQry_OrderRpt.PaymentStatusColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsNoteNull() As Boolean
+            Return Me.IsNull(Me.tableQry_OrderRpt.NoteColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetNoteNull()
+            Me(Me.tableQry_OrderRpt.NoteColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     

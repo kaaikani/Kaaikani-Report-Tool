@@ -513,6 +513,9 @@
               <xs:element name="RewardPointUsed" msprop:Generator_ColumnVarNameInTable="columnRewardPointUsed" msprop:Generator_ColumnPropNameInRow="RewardPointUsed" msprop:Generator_ColumnPropNameInTable="RewardPointUsedColumn" msprop:Generator_UserColumnName="RewardPointUsed" type="xs:int" minOccurs="0" />
               <xs:element name="CouponCode" msprop:Generator_ColumnVarNameInTable="columnCouponCode" msprop:Generator_ColumnPropNameInRow="CouponCode" msprop:Generator_ColumnPropNameInTable="CouponCodeColumn" msprop:Generator_UserColumnName="CouponCode" type="xs:string" minOccurs="0" />
               <xs:element name="ShadowPrice" msprop:Generator_ColumnVarNameInTable="columnShadowPrice" msprop:Generator_ColumnPropNameInRow="ShadowPrice" msprop:Generator_ColumnPropNameInTable="ShadowPriceColumn" msprop:Generator_UserColumnName="ShadowPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentMode" msprop:Generator_ColumnVarNameInTable="columnPaymentMode" msprop:Generator_ColumnPropNameInRow="PaymentMode" msprop:Generator_ColumnPropNameInTable="PaymentModeColumn" msprop:Generator_UserColumnName="PaymentMode" type="xs:string" minOccurs="0" />
+              <xs:element name="PaymentStatus" msprop:Generator_ColumnVarNameInTable="columnPaymentStatus" msprop:Generator_ColumnPropNameInRow="PaymentStatus" msprop:Generator_ColumnPropNameInTable="PaymentStatusColumn" msprop:Generator_UserColumnName="PaymentStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnPropNameInTable="NoteColumn" msprop:Generator_UserColumnName="Note" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -137,6 +137,7 @@ Public Class FrmOrderRpt
                     rptLoad.Rows(i)("ShadowPrice") = ReportTable.Rows(i)("ShadowPrice")
                     rptLoad.Rows(i)("RewardPointUsed") = ReportTable.Rows(i)("RewardPointUsed")
                     rptLoad.Rows(i)("CouponCode") = ReportTable.Rows(i)("CouponCode")
+                    rptLoad.Rows(i)("Note") = ReportTable.Rows(i)("Note")
                     'rptLoad.Rows(i)("Selection") = False
                     Dim address As String = ReportTable.Rows(i)("BillingAddress")
                     Dim add1 As String = RptObj.readJSON(address)
@@ -180,24 +181,63 @@ Public Class FrmOrderRpt
                     rptLoad.Rows(i)("NetTotal") = ReportTable.Rows(i)("NetTotal")
                     rptLoad.Rows(i)("DeliveryTime") = ReportTable.Rows(i)("DeliveryTime")
                     rptLoad.Rows(i)("CuttingInstructions") = ReportTable.Rows(i)("CuttingInstructions")
+                    rptLoad.Rows(i)("PaymentMode") = ReportTable.Rows(i)("PaymentMode")
                     rptLoad.Rows(i)("OrdNo") = ReportTable.Rows(i)("OrdNo")
+                    'replace
+                    '  Dim pay As String = ReportTable.Rows(i)("MetaData").ToString()
+                    ' Dim payment As String = ""
+                    'If (pay <> "") Then
+                    'Payment = RptObj.readPaymentMetadataJSON(pay)
+                    'End If
+                    'If Payment <> "" Then
+                    '' If DataClass.CommonView.PaymentId <> Nothing Then
+                    'rptLoad.Rows(i)("PaymentStatus") = "Bill Paid"
+                    'Else
+                    'Dim billPaid As String = ReportTable.Rows(i)("PaymentMode")
+                    'If billPaid <> "" Then
+                    'If (billPaid.Contains("Bill Paid")) Then
+                    'rptLoad.Rows(i)("PaymentStatus") = "Bill Paid"
+                    'End If
+                    ' End If
+                    ' End If
+                    Dim meta As String = ReportTable.Rows(i)("MetaData").ToString().ToLower()
+                    Dim payMode As String = ReportTable.Rows(i)("CuttingInstructions").ToString().ToLower()
+                    Dim paymentJson As String = ""
 
-                    Dim pay As String = ReportTable.Rows(i)("MetaData").ToString()
-                    Dim payment As String = ""
-                    If (pay <> "") Then
-                        payment = RptObj.readPaymentMetadataJSON(pay)
+                    ' Parse metadata JSON (your existing function)
+                    If meta <> "" Then
+                        paymentJson = RptObj.readPaymentMetadataJSON(meta)
                     End If
-                    If Payment <> "" Then
-                        ' If DataClass.CommonView.PaymentId <> Nothing Then
+
+                    Dim isBillPaid As Boolean = False
+
+                    ' 1️⃣ Razorpay = Bill Paid
+                    If meta.Contains("razorpay_payment_id") Then
+                        isBillPaid = True
+                    End If
+
+                    ' 2️⃣ method = online → Bill Paid
+                    If meta.Contains("""method"":""online""") Then
+                        isBillPaid = True
+                    End If
+
+                    ' 3️⃣ CuttingInstructions says Bill Paid
+                    If payMode.Contains("bill paid") Then
+                        isBillPaid = True
+                    End If
+
+                    ' 4️⃣ paymentType = offline → COD
+                    If meta.Contains("""paymenttype"":""offline""") Then
+                        isBillPaid = False
+                    End If
+
+                    ' ---- FINAL OUTPUT ----
+                    If isBillPaid Then
                         rptLoad.Rows(i)("PaymentStatus") = "Bill Paid"
                     Else
-                        Dim billPaid As String = ReportTable.Rows(i)("CuttingInstructions")
-                        If billPaid <> "" Then
-                            If (billPaid.Contains("Bill Paid")) Then
-                                rptLoad.Rows(i)("PaymentStatus") = "Bill Paid"
-                            End If
-                        End If
+                        rptLoad.Rows(i)("PaymentStatus") = "COD"
                     End If
+
                     code = ReportTable.Rows(i)("Code")
                 Next
                 rptLoad.DefaultView.Sort = "OrdNo ASC,Pincode asc"
@@ -790,6 +830,7 @@ Public Class FrmOrderRpt
             '    dtb1 = dv.ToTable
 
             Dim tblDtDel As DataTable = dtb1.Clone
+            tblDtDel.Columns("SNo").DataType = GetType(Integer)
 
             'rptLoad.Columns.Add("Selection", GetType(Boolean))
             Dim code As String = ""
@@ -812,7 +853,7 @@ Public Class FrmOrderRpt
                     tblDtDel.Rows(i)("SNo") = sNo + 1
                     sNo = sNo + 1
                 Else
-                    tblDtDel.Rows(i)("SNo") = sNo
+                    tblDtDel.Rows(i)("SNo") = CInt(sNo)
                 End If
                 tblDtDel.Rows(i)("Code") = dtb1.Rows(i)("Code")
                 tblDtDel.Rows(i)("Time") = dtb1.Rows(i)("Time")
@@ -830,19 +871,68 @@ Public Class FrmOrderRpt
                 tblDtDel.Rows(i)("NetTotal") = dtb1.Rows(i)("NetTotal")
                 tblDtDel.Rows(i)("OrdNo") = dtb1.Rows(i)("OrdNo")
                 ' If DataClass.CommonView.PaymentId <> Nothing Then
-                If pay <> "" Then
-                    tblDtDel.Rows(i)("PaymentStatus") = "Bill Paid"
-                    ' rptLoad.Rows(i)("PaymentStatus") = "Bill Paid"
+                'change code
+                ' --- Payment Status Logic ---
+                Dim meta As String = dtb1.Rows(i)("Metadata").ToString()
+                Dim cutInst As String = ""
+                Dim isBillPaid As Boolean = False
+
+                ' Cutting Instructions check
+                If dtb1.Columns.Contains("CuttingInstructions") Then
+                    cutInst = dtb1.Rows(i)("CuttingInstructions").ToString()
                 End If
+
+                If meta <> "" Then
+
+                    ' 1️⃣ Razorpay online payment → Bill Paid
+                    If meta.ToLower().Contains("razorpay_payment_id") Then
+                        isBillPaid = True
+                    End If
+
+                    ' 2️⃣ method = "online" → Bill Paid
+                    If meta.ToLower().Contains("""method"":""online""") Then
+                        isBillPaid = True
+                    End If
+
+                    ' 3️⃣ paymentType = "offline" → COD
+                    If meta.ToLower().Contains("""paymenttype"":""offline""") Then
+                        isBillPaid = False   ' force COD
+                    End If
+
+                End If
+
+                ' 4️⃣ Cutting Instructions mention → Bill Paid
+                If cutInst.ToLower().Contains("bill paid") Then
+                    isBillPaid = True
+                End If
+
+                ' ---- FINAL OUTPUT ----
+                If isBillPaid Then
+                    tblDtDel.Rows(i)("PaymentStatus") = "Bill Paid"
+                Else
+                    tblDtDel.Rows(i)("PaymentStatus") = "COD"
+                End If
+
+                ' If pay <> "" Then
+                'tblDtDel.Rows(i)("PaymentStatus") = "Bill Paid"
+                '' rptLoad.Rows(i)("PaymentStatus") = "Bill Paid"
+                'End If
                 code = dtb1.Rows(i)("Code")
             Next
-            tblDtDel.DefaultView.Sort = "OrdNo ASC,Pincode asc"
-            tblDtDel = rptLoad.DefaultView.ToTable
-
-            'rptFinalLoad = rptLoad.Clone
+            'change//
+            ' tblDtDel.DefaultView.Sort = "OrdNo ASC,Pincode asc"
+            ' tblDtDel = rptLoad.DefaultView.ToTable
+            tblDtDel.DefaultView.Sort = "OrdNo ASC,Pincode ASC"
+            tblDtDel = tblDtDel.DefaultView.ToTable()
+            'change code
+            ' 'rptFinalLoad = rptLoad.Clone
+            ' code = ""
+            ' If tblDtDel.Rows.Count > 0 Then
+            ' code = rptLoad.Rows(0)("Code")
+            ' End If
             code = ""
             If tblDtDel.Rows.Count > 0 Then
-                code = rptLoad.Rows(0)("Code")
+                code = tblDtDel.Rows(0)("Code")
             End If
             sNo = 1
             For i As Integer = 0 To tblDtDel.Rows.Count - 1
@@ -853,7 +943,7 @@ Public Class FrmOrderRpt
                     tblDtDel.Rows(i)("SNo") = sNo + 1
                     sNo = sNo + 1
                 Else
-                    tblDtDel.Rows(i)("SNo") = sNo
+                    tblDtDel.Rows(i)("SNo") = CInt(sNo)
                 End If
                 code = tblDtDel.Rows(i)("Code")
             Next

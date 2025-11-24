@@ -681,7 +681,6 @@ C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\RestSharp.dll
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\Urls.dll
-C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\MySql.Data.dll
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\DataClass.pdb
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
