@@ -202,6 +202,7 @@ Public Class FrmOrderRpt
                     ' End If
                     Dim meta As String = ReportTable.Rows(i)("MetaData").ToString().ToLower()
                     Dim payMode As String = ReportTable.Rows(i)("CuttingInstructions").ToString().ToLower()
+                    Dim payMode1 As String = ReportTable.Rows(i)("PaymentMode").ToString().ToLower()
                     Dim paymentJson As String = ""
 
                     ' Parse metadata JSON (your existing function)
@@ -216,17 +217,20 @@ Public Class FrmOrderRpt
                         isBillPaid = True
                     End If
 
-                    ' 2️⃣ method = online → Bill Paid
+
                     If meta.Contains("""method"":""online""") Then
                         isBillPaid = True
                     End If
 
-                    ' 3️⃣ CuttingInstructions says Bill Paid
-                    If payMode.Contains("bill paid") Then
+                    Dim p As String = payMode.ToLower().Replace(" ", "").Replace(".", "")
+                    If p.Contains("billpaid") Then
+                        isBillPaid = True
+                    End If
+                    Dim p1 As String = payMode1.ToLower().Replace(" ", "").Replace(".", "")
+                    If p1.Contains("billpaid") Then
                         isBillPaid = True
                     End If
 
-                    ' 4️⃣ paymentType = offline → COD
                     If meta.Contains("""paymenttype"":""offline""") Then
                         isBillPaid = False
                     End If
@@ -511,7 +515,6 @@ Public Class FrmOrderRpt
             'calc(dv.ToTable)
         End If
     End Sub
-
     Private Sub txtFilter2_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtFilter2.TextChanged
         Dim dv As DataView
         dv = ReportTable.DefaultView
@@ -669,7 +672,6 @@ Public Class FrmOrderRpt
                 dtb1 = dv.ToTable
                 dtb1.TableName = "Qry_OrderRpt"
             End If
-
             If dtb1.Rows.Count = 0 Then MsgBox("No Records Found...", MsgBoxStyle.Information, Me.Text) : Exit Sub
 
             Printds.Tables.Clear()
@@ -870,43 +872,50 @@ Public Class FrmOrderRpt
                 End If
                 tblDtDel.Rows(i)("NetTotal") = dtb1.Rows(i)("NetTotal")
                 tblDtDel.Rows(i)("OrdNo") = dtb1.Rows(i)("OrdNo")
+                tblDtDel.Rows(i)("Note") = dtb1.Rows(i)("Note")
                 ' If DataClass.CommonView.PaymentId <> Nothing Then
                 'change code
                 ' --- Payment Status Logic ---
                 Dim meta As String = dtb1.Rows(i)("Metadata").ToString()
                 Dim cutInst As String = ""
+                Dim paymode As String = " "
                 Dim isBillPaid As Boolean = False
 
-                ' Cutting Instructions check
+
                 If dtb1.Columns.Contains("CuttingInstructions") Then
                     cutInst = dtb1.Rows(i)("CuttingInstructions").ToString()
+                End If
+                If dtb1.Columns.Contains("PaymentMode") Then
+                    paymode = dtb1.Rows(i)("PaymentMode").ToString()
                 End If
 
                 If meta <> "" Then
 
-                    ' 1️⃣ Razorpay online payment → Bill Paid
+
                     If meta.ToLower().Contains("razorpay_payment_id") Then
                         isBillPaid = True
                     End If
 
-                    ' 2️⃣ method = "online" → Bill Paid
+
                     If meta.ToLower().Contains("""method"":""online""") Then
                         isBillPaid = True
                     End If
 
-                    ' 3️⃣ paymentType = "offline" → COD
+
                     If meta.ToLower().Contains("""paymenttype"":""offline""") Then
                         isBillPaid = False   ' force COD
                     End If
 
                 End If
-
-                ' 4️⃣ Cutting Instructions mention → Bill Paid
-                If cutInst.ToLower().Contains("bill paid") Then
+                Dim p As String = cutInst.ToLower().Replace(" ", "").Replace(".", "")
+                If p.Contains("billpaid") Then
+                    isBillPaid = True
+                End If
+                Dim p1 As String = paymode.ToLower().Replace(" ", "").Replace(".", "")
+                If p1.Contains("billpaid") Then
                     isBillPaid = True
                 End If
 
-                ' ---- FINAL OUTPUT ----
                 If isBillPaid Then
                     tblDtDel.Rows(i)("PaymentStatus") = "Bill Paid"
                 Else
@@ -1027,6 +1036,7 @@ Public Class FrmOrderRpt
         '    Cr_OrderBill(dgvReport.Item("Code", i).Value.ToString())
         'Next
         Cr_OrderBill("")
+
     End Sub
 
     Private Sub chkAll_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkAll.CheckedChanged

@@ -190,7 +190,7 @@ namespace DataClass
                     qry += " AND py.state IN('Settled','Authorized')";
                     qry += " AND O.State NOT IN ('DELIVERED','CANCELLED','AddingItems') and  ";
 
-                    if (locationId == 4) //|| locationId==1) 
+                    if (locationId == 4) //|| locationId==1) C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\Reports\Class1.cs
                     { qry += " st.name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and "; }
                     qry += " ch.ChannelId= " + locationId;
                     //qry+= " and S.Cancelled=0 ";
@@ -674,7 +674,7 @@ namespace DataClass
                 string qry = "";
 
                 qry = " Select * from (";
-                qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions as CuttingInstructions,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,1 as OrdNo, CustomerId,'' as Pincode,'' as PaymentStatus";
+                qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions as CuttingInstructions,COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '' ) AS PaymentMode,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,1 as OrdNo, CustomerId,'' as Pincode,'' as PaymentStatus,om.note as Note";
                 // qry += " FROM " + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL,";
                 // qry += CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st," + CommonView.DataBase + ".product_variant PV, ";
                 // qry += " " + CommonView.DataBase + ".product_variant_price op,";
@@ -693,6 +693,8 @@ namespace DataClass
                 qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
                 qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
                 qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
+                qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
+                qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
                
                 //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                 qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
@@ -705,7 +707,7 @@ namespace DataClass
                 if (locationId == 4)
                 {
                     qry += " Union All";
-                    qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions as CuttingInstructions,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,2 as OrdNo,CustomerId,'' as Pincode,'' as PaymentStatus";
+                    qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions as CuttingInstructions,COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '' ) AS PaymentMode,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,2 as OrdNo,CustomerId,'' as Pincode,'' as PaymentStatus,om.note as Note";
                     // qry += " FROM " + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
                     // qry += " " + CommonView.DataBase + ".product_variant_price op," + CommonView.DataBase + ".product_variant PV, ";
                     // qry += CommonView.DataBase + ".order O ";
@@ -722,7 +724,9 @@ namespace DataClass
                     qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
                     qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
                     qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
-                   //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                    qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
+                    qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
+                    //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " and customFieldsClientrequesttocanceL=0 and O.State not in ('DELIVERED','CANCELLED') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  ";
                     qry += " and ch.ChannelId= " + locationId;
