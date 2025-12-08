@@ -85,3 +85,17 @@ C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.Pro
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.dll
 C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.pdb

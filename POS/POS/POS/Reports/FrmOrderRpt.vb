@@ -213,12 +213,12 @@ Public Class FrmOrderRpt
                     Dim isBillPaid As Boolean = False
 
                     ' 1️⃣ Razorpay = Bill Paid
-                    If meta.Contains("razorpay_payment_id") Then
+                    If meta.Contains("razorpayPaymentId") Then
                         isBillPaid = True
                     End If
 
 
-                    If meta.Contains("""method"":""online""") Then
+                    If meta.Contains("""mode"":""online""") Then
                         isBillPaid = True
                     End If
 
@@ -231,7 +231,7 @@ Public Class FrmOrderRpt
                         isBillPaid = True
                     End If
 
-                    If meta.Contains("""paymenttype"":""offline""") Then
+                    If meta.Contains("""paymentmethod"":""offline""") Then
                         isBillPaid = False
                     End If
 
@@ -892,17 +892,17 @@ Public Class FrmOrderRpt
                 If meta <> "" Then
 
 
-                    If meta.ToLower().Contains("razorpay_payment_id") Then
+                    If meta.ToLower().Contains("razorpaypaymentid") Then
                         isBillPaid = True
                     End If
 
 
-                    If meta.ToLower().Contains("""method"":""online""") Then
+                    If meta.ToLower().Contains("""mode"":""online""") Then
                         isBillPaid = True
                     End If
 
 
-                    If meta.ToLower().Contains("""paymenttype"":""offline""") Then
+                    If meta.ToLower().Contains("""paymentmethod"":""offline""") Then
                         isBillPaid = False   ' force COD
                     End If
 
