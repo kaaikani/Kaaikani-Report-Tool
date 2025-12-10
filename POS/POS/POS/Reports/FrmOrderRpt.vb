@@ -867,7 +867,7 @@ Public Class FrmOrderRpt
                 Else
                     Dim dtCustAdd As DataTable = RptObj.RpCustomerDetail(dtb1.Rows(i)("CustomerId"))
                     If dtCustAdd.Rows.Count > 0 Then
-                        rptLoad.Rows(i)("Pincode") = dtCustAdd.Rows(0)("Pincode")
+                        tblDtDel.Rows(i)("Pincode") = dtCustAdd.Rows(0)("Pincode")
                     End If
                 End If
                 tblDtDel.Rows(i)("NetTotal") = dtb1.Rows(i)("NetTotal")
