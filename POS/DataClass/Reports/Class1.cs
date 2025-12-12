@@ -186,7 +186,7 @@ namespace DataClass
                     qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
                     //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                    qry += " AND O.customFieldsClientrequesttocancel =0";
+                    qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)";
                     qry += " AND py.state IN('Settled','Authorized')";
                     qry += " AND O.State NOT IN ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') and  ";
                                                           // C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\Reports\Class1.cs
@@ -273,7 +273,7 @@ namespace DataClass
                         qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
                         // qry += " Where customFieldsPlacedatistformatted between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
                         qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
-                        qry += " O.customFieldsClientrequesttocancel=0 and py.state IN('Settled','Authorized') AND O.State not in ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') and ";
+                        qry += " (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and py.state IN('Settled','Authorized') AND O.State not in ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') and ";
                         if (locationId == 4)
                         {
                             qry += " st.name = 'Tomorrow Evening Delivery (Rs.20 incl.Tax)' AND ";
@@ -301,7 +301,7 @@ namespace DataClass
                     qry += "O.couponCodes AS CouponCode";
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".order_item S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
                     qry += " " + CommonView.DataBase + ".product_variant PV," + CommonView.DataBase + ".product_variant_price op ";
-                    qry += " WHERE O.ID=OL.ORDERID and py.OrderId=o.Id AND OL.PRODUCTVARIANTID=P.ID AND S.LINEID=OL.ID and sl.OrderId=o.Id and op.variantid=ol.productvariantid and op.variantid=p.id and sl.shippingmethodid=st.Id AND PV.iD=P.ID AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' and O.customFieldsClientrequesttocancel =0 and o.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and Cast(o.UpdatedAt as Time)<= '" + time.ToString("HH:mm:ss") + "'";
+                    qry += " WHERE O.ID=OL.ORDERID and py.OrderId=o.Id AND OL.PRODUCTVARIANTID=P.ID AND S.LINEID=OL.ID and sl.OrderId=o.Id and op.variantid=ol.productvariantid and op.variantid=p.id and sl.shippingmethodid=st.Id AND PV.iD=P.ID AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' and  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and o.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and Cast(o.UpdatedAt as Time)<= '" + time.ToString("HH:mm:ss") + "'";
                     qry += " and S.Cancelled=0";
                     qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
                     qry += " CustomerId,py.metadata,s.ListPrice,p.name ";
@@ -310,7 +310,7 @@ namespace DataClass
                     qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
                     qry += "O.couponCodes AS CouponCode";
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
-                    qry += CommonView.DataBase + ".product_variant_price op," + CommonView.DataBase + ".product_variant PV WHERE O.ID=OL.ORDERID and py.OrderId=o.Id AND OL.PRODUCTVARIANTID=P.ID AND S.ORDERLINEID=OL.ID and sl.OrderId=o.Id and sl.shippingmethodid=st.Id and sl.OrderId=o.Id and op.variantid=ol.productvariantid and op.variantid=p.id AND PV.iD=P.ID AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' AND O.customFieldsClientrequesttocancel =0 and o.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)' and Cast(o.UpdatedAt as Time)<= '" + time.ToString("HH:mm:ss") + "'";
+                    qry += CommonView.DataBase + ".product_variant_price op," + CommonView.DataBase + ".product_variant PV WHERE O.ID=OL.ORDERID and py.OrderId=o.Id AND OL.PRODUCTVARIANTID=P.ID AND S.ORDERLINEID=OL.ID and sl.OrderId=o.Id and sl.shippingmethodid=st.Id and sl.OrderId=o.Id and op.variantid=ol.productvariantid and op.variantid=p.id AND PV.iD=P.ID AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and o.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)' and Cast(o.UpdatedAt as Time)<= '" + time.ToString("HH:mm:ss") + "'";
                     qry += " and S.Cancelled=0";
                     qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
                     qry += " CustomerId,py.metadata,s.ListPrice,p.name ";
@@ -323,7 +323,7 @@ namespace DataClass
                     qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
                     qry += "O.couponCodes AS CouponCode";
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
-                    qry += " " + CommonView.DataBase + ".product_variant PV," + CommonView.DataBase + ".product_variant_price op WHERE O.ID=OL.ORDERID and py.OrderId=o.Id AND OL.PRODUCTVARIANTID=P.ID AND S.ORDERLINEID=OL.ID and sl.OrderId=o.Id and op.variantid=ol.productvariantid and op.variantid=p.id and sl.shippingmethodid=st.Id AND PV.iD=P.ID AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' and O.customFieldsClientrequesttocancel =0 and o.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and Cast(o.UpdatedAt as Time)>='" + time.ToString("HH:mm:ss") + "'";
+                    qry += " " + CommonView.DataBase + ".product_variant PV," + CommonView.DataBase + ".product_variant_price op WHERE O.ID=OL.ORDERID and py.OrderId=o.Id AND OL.PRODUCTVARIANTID=P.ID AND S.ORDERLINEID=OL.ID and sl.OrderId=o.Id and op.variantid=ol.productvariantid and op.variantid=p.id and sl.shippingmethodid=st.Id AND PV.iD=P.ID AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' and  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and o.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and Cast(o.UpdatedAt as Time)>='" + time.ToString("HH:mm:ss") + "'";
                     qry += " and S.Cancelled=0";
                     qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
                     qry += " CustomerId,py.metadata,s.ListPrice,p.name ";
@@ -332,7 +332,7 @@ namespace DataClass
                     qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
                     qry += "O.couponCodes AS CouponCode";
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".payment py," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P," + CommonView.DataBase + ".stock_movement S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st, ";
-                    qry += CommonView.DataBase + ".product_variant_price op," + CommonView.DataBase + ".product_variant PV WHERE O.ID=OL.ORDERID and py.OrderId=o.Id AND OL.PRODUCTVARIANTID=P.ID AND S.ORDERLINEID=OL.ID and sl.OrderId=o.Id and sl.shippingmethodid=st.Id and sl.OrderId=o.Id and op.variantid=ol.productvariantid and op.variantid=p.id AND PV.iD=P.ID AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "'  AND O.customFieldsClientrequesttocancel =0 and o.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  and Cast(o.UpdatedAt as Time)>='" + time.ToString("HH:mm:ss") + "'";
+                    qry += CommonView.DataBase + ".product_variant_price op," + CommonView.DataBase + ".product_variant PV WHERE O.ID=OL.ORDERID and py.OrderId=o.Id AND OL.PRODUCTVARIANTID=P.ID AND S.ORDERLINEID=OL.ID and sl.OrderId=o.Id and sl.shippingmethodid=st.Id and sl.OrderId=o.Id and op.variantid=ol.productvariantid and op.variantid=p.id AND PV.iD=P.ID AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "'  AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and o.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  and Cast(o.UpdatedAt as Time)>='" + time.ToString("HH:mm:ss") + "'";
                     qry += " and S.Cancelled=0";
                     qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
                     qry += " CustomerId,py.metadata,s.ListPrice,p.name ";
@@ -406,7 +406,7 @@ namespace DataClass
                     qry += " LEFT JOIN wow_vendure.order_channels_channel ch ON O.Id = ch.OrderId ";
                     qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     //  qry += " WHERE customFieldsPlacedatistformatted between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
-                    qry += "AND O.customFieldsClientrequesttocancel =0 and O.State not in ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') "; //and S.Cancelled=0";
+                    qry += "AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and O.State not in ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') "; //and S.Cancelled=0";
                     //qry += " Group by SKU,P.name 
                     qry += " oRDER BY trim(P.name) ASC ";
                 }
@@ -418,7 +418,7 @@ namespace DataClass
                     qry += CommonView.DataBase + ".order_item S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st,";
                     qry += CommonView.DataBase + ".product_variant PV WHERE O.ID=OL.ORDERID AND OL.PRODUCTVARIANTID=P.ID AND S.LINEID=OL.ID and sl.OrderId=O.Id and P.Id=PV.Id ";
                     qry += " and sl.shippingmethodid=st.Id AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "'";
-                    qry += " AND O.customFieldsClientrequesttocancel=0 and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and Cast(O.UpdatedAt as Time)<= '" + time.ToString("HH:mm:ss") + "'";
+                    qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and Cast(O.UpdatedAt as Time)<= '" + time.ToString("HH:mm:ss") + "'";
                     qry += " and S.Cancelled=0";
                     qry += " Group by SKU,P.name oRDER BY trim(P.name) ASC ";
                 }
@@ -430,7 +430,7 @@ namespace DataClass
                     qry += CommonView.DataBase + ".order_item S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st,";
                     qry += CommonView.DataBase + ".product_variant PV WHERE O.ID=OL.ORDERID AND OL.PRODUCTVARIANTID=P.ID AND S.LINEID=OL.ID and sl.OrderId=O.Id and P.Id=PV.Id ";
                     qry += " and sl.shippingmethodid=st.Id AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "'";
-                    qry += " AND O.customFieldsClientrequesttocancel=0 and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and Cast(o.UpdatedAt as Time)>= '" + time.ToString("HH:mm:ss") + "'";
+                    qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and Cast(o.UpdatedAt as Time)>= '" + time.ToString("HH:mm:ss") + "'";
                     qry += " and S.Cancelled=0";
                     qry += " Group by SKU,P.name oRDER BY trim(P.name) ASC ";
                 }
@@ -546,7 +546,7 @@ namespace DataClass
                     qry += " AND ch.ChannelId = " + locationId;//       -- ✅ ensures only one matching row per order
                     qry += " WHERE ";
                     qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                    qry += " AND O.customFieldsClientrequesttocancel=0";
+                    qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)";
                     qry += " AND O.State NOT IN ('DELIVERED', 'CANCELLED', 'AddingItems','CancellationRequested') ";
                     if (locationId == 4 || locationId == 6)
                     { qry += " AND st.name LIKE 'Tomorrow Morning Delivery%' "; }
@@ -612,7 +612,7 @@ namespace DataClass
                         qry += " AND ch.ChannelId = " + locationId;//       -- ✅ ensures only one matching row per order
                         qry += " WHERE ";
                         qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                        qry += " AND O.customFieldsClientrequesttocancel=0 ";
+                        qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) ";
                         qry += " AND O.State NOT IN ('DELIVERED', 'CANCELLED', 'AddingItems','CancellationRequested') ";
                         if (locationId == 4 || locationId ==6)
                         {
@@ -716,7 +716,7 @@ namespace DataClass
                
                 //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                 qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                qry += " AND O.customFieldsClientrequesttocancel=0  and O.State not in ('DELIVERED','CANCELLED','AddingItems') and ";
+                qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)  and O.State not in ('DELIVERED','CANCELLED','AddingItems') and ";
                 if (locationId == 4)
                 { qry += "  st.Name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and "; }
                 qry += " ch.ChannelId= " + locationId;
@@ -746,7 +746,7 @@ namespace DataClass
                     qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
                     //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                    qry += " AND O.customFieldsClientrequesttocancel=0  and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  ";
+                    qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  ";
                     qry += " and ch.ChannelId= " + locationId;
                     // qry += "  and py.orderid=12874";
                 }
@@ -820,9 +820,9 @@ namespace DataClass
                     qry += " and sl.OrderId=O.Id and P.Id=PV.Id ";
                     //qry += " and sl.shippingmethodid=st.Id AND CAST(O.OrderPlacedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' and ";
                     qry += " and sl.shippingmethodid=st.Id AND ";
-                    qry += " O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and";
+                    qry += " O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59'";
                     //   qry += " customFieldsPlacedatistformatted between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
-                    qry += " AND O.customFieldsClientrequesttocancel=0  and O.State not in ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') and ch.ChannelId in (4,6,5,7) ";
+                    qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and O.State not in ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') and ch.ChannelId in (4,6,5,7) ";
                     //qry += " and S.Cancelled=0";
                     qry += " Group by SKU,P.name,Code ";
                     qry += " oRDER BY trim(P.name) ASC ";
@@ -834,7 +834,7 @@ namespace DataClass
                     qry += " FROM " + CommonView.DataBase + ".order O," + CommonView.DataBase + ".order_line OL," + CommonView.DataBase + ".product_variant_translation P,";
                     qry += CommonView.DataBase + ".order_item S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st,";
                     qry += CommonView.DataBase + ".PRODUCT_VARIANT PV WHERE O.ID=OL.ORDERID AND OL.PRODUCTVARIANTID=P.ID AND S.LINEID=OL.ID and sl.OrderId=O.Id and P.Id=PV.Id and ";
-                    qry += " sl.shippingmethodid=st.Id AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' ANDO.customFieldsClientrequesttocancel=0  and ";
+                    qry += " sl.shippingmethodid=st.Id AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)  and ";
                     qry += " O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and Cast(O.UpdatedAt as Time)<= '" + time.ToString("HH:mm:ss") + "'";
                     qry += " and S.Cancelled=0";
                     qry += " Group by SKU,p.Name oRDER BY trim(p.Name) ASC ";
@@ -847,7 +847,7 @@ namespace DataClass
                     qry += CommonView.DataBase + ".order_item S," + CommonView.DataBase + ".shipping_line sl," + CommonView.DataBase + ".shipping_method_translation st,";
                     qry += CommonView.DataBase + ".product_variant PV WHERE O.ID=OL.ORDERID AND OL.PRODUCTVARIANTID=P.ID AND S.LINEID=OL.ID and sl.OrderId=O.Id and P.Id=PV.Id ";
                     qry += " and sl.shippingmethodid=st.Id AND CAST(O.updatedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "'";
-                    qry += " and O.customFieldsClientrequesttocancel=0  and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and Cast(o.UpdatedAt as Time)>= '" + time.ToString("HH:mm:ss") + "'";
+                    qry += " and (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and Cast(o.UpdatedAt as Time)>= '" + time.ToString("HH:mm:ss") + "'";
                     qry += " and S.Cancelled=0";
                     qry += " Group by SKU,P.name oRDER BY trim(P.name) ASC ";
                 }

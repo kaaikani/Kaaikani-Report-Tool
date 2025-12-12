@@ -4,7 +4,6 @@ Imports System.Drawing.Imaging
 Imports System.Drawing.Printing
 Imports System.Windows
 Imports System.Windows.Forms
-
 Public Class FrmOrderRpt
     Dim RptObj As New DataClass.OrderwiseRpt
     Dim blnProcess As Boolean = False
@@ -434,7 +433,7 @@ Public Class FrmOrderRpt
             olecon.ConnectionString = connstring
             olecomm = New OleDbCommand
 
-            
+
             olecomm.CommandText = _
                "Select SKU,[Product Name] as ItemName,[Tamil Name] as TamilName,Category,[Group Name] as GroupName,Weight,OrdNo from [Sheet1$] Where [Product Name] is not null "
             olecomm.Connection = olecon
@@ -872,7 +871,14 @@ Public Class FrmOrderRpt
                 End If
                 tblDtDel.Rows(i)("NetTotal") = dtb1.Rows(i)("NetTotal")
                 tblDtDel.Rows(i)("OrdNo") = dtb1.Rows(i)("OrdNo")
-                tblDtDel.Rows(i)("Note") = dtb1.Rows(i)("Note")
+                tblDtDel.Rows(i)("PaymentMode") = dtb1.Rows(i)("PaymentMode")
+                '  tblDtDel.Rows(i)("Note") = dtb1.Rows(i)("Note")
+                If Not IsDBNull(dtb1.Rows(i)("Note")) Then
+                    tblDtDel.Rows(i)("Note") = dtb1.Rows(i)("Note").ToString()
+                Else
+                    tblDtDel.Rows(i)("Note") = ""
+                End If
+
                 ' If DataClass.CommonView.PaymentId <> Nothing Then
                 'change code
                 ' --- Payment Status Logic ---

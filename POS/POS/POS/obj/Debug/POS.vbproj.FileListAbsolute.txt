@@ -722,9 +722,9 @@ C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Ne
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestSharp.xml
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
-C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.Resources.resources
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
