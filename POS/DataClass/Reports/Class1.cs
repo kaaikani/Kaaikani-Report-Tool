@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
@@ -140,157 +140,285 @@ namespace DataClass
                     //// qry += " PV.iD=P.ID AND O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 19:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
                     // qry += " customFieldsPlacedatistformatted between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
                     // qry += " customFieldsClientrequesttocanceL=0 and O.State not in ('DELIVERED','CANCELLED','AddingItems') and ";
-                    qry = " SELECT * ";
-                    qry += "FROM ( ";
-                    qry += " SELECT DISTINCT ";
-                    qry += "     O.id, ";
-                    qry += " SKU AS PCode, ";
-                    qry += " '' AS SNo, ";
-                    qry += " Code, ";
-                    qry += " CAST(O.OrderPlacedAt AS DATE) AS Date, ";
-                    qry += " CAST(O.updatedAt AS TIME) AS Time, ";
+                    //qry = " SELECT * ";
+                    //qry += "FROM ( ";
+                    //qry += " SELECT DISTINCT ";
+                    //qry += " O.id, ";
+                    //qry += " SKU AS PCode, ";
+                    //qry += " '' AS SNo, ";
+                    //qry += " Code, ";
+                    //qry += " CAST(O.OrderPlacedAt AS DATE) AS Date, ";
+                    //qry += " CAST(O.updatedAt AS TIME) AS Time, ";
+                    //qry += " ShippingAddress AS BillingAddress, ";
+                    //qry += " '' AS Customer, ";
+                    //qry += " '' AS Address, ";
+                    //qry += " '' AS CellNo, ";
+                    //qry += " TRIM(P.name) AS ItemName, ";
+                    //qry += " '' AS TamilName, ";
+                    //qry += " Quantity AS Qty, ";
+                    //qry += " pv.customFieldsShadowprice/100 AS ShadowPrice, ";
+                    //qry += " op.price/100 AS Rate, ";
+                    //qry += " (Quantity * (op.price/100)) AS Total, ";
+                    //qry += " subTotalWithTax/100 AS SubTotal, ";
+                    //qry += " shippingWithTax/100 AS Shipping, ";
+                    //qry += " (subTotalWithTax + shippingWithTax)/100 AS NetTotal, ";
+                    //qry += " st.name AS DeliveryTime, ";
+                    //qry += " customFieldsOtherinstructions AS CuttingInstructions, ";
+                    //qry += " COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '' ) AS PaymentMode, ";
+                    //qry += " 1 AS OrdNo, ";
+                    //qry += " CustomerId, ";
+                    //qry += " '' AS Pincode, ";
+                    //qry += " py.metadata, ";
+                    //qry += " '' AS PaymentStatus, ";
+                    //qry += " O.customFieldsLoyaltypointsused AS RewardPointUsed, ";
+                    //qry += " O.couponCodes AS CouponCode, ";
+                    //qry += " om.note AS Note ";
+                    //qry += " FROM " + CommonView.DataBase + ".order O ";
+                    //qry += " INNER JOIN " + CommonView.DataBase + ".order_line OL ON O.ID = OL.ORDERID ";
+                    //qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_translation P ON OL.PRODUCTVARIANTID = P.ID ";
+                    //qry += " INNER JOIN " + CommonView.DataBase + ".shipping_line sl ON sl.OrderId = O.Id ";
+                    //qry += " INNER JOIN " + CommonView.DataBase + ".shipping_method_translation st ON sl.shippingmethodid = st.Id ";
+                    //qry += " INNER JOIN " + CommonView.DataBase + ".product_variant pv ON pv.id = OL.productVariantId ";
+                    //qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
+                    //qry += " INNER JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
+
+                    //qry += " INNER JOIN ( ";
+                    //qry += "   SELECT variantId, channelId, MAX(price) AS price ";
+                    //qry += "   FROM " + CommonView.DataBase + ".product_variant_price ";
+                    //qry += "   GROUP BY variantId, channelId ";
+                    //qry += " ) op ON op.variantId = OL.productVariantId ";
+                    //qry += "    AND op.channelId = ch.ChannelId ";
+
+                    //qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 ";
+                    //qry += " INNER JOIN (SELECT orderId, MAX(id) AS maxId FROM " + CommonView.DataBase + ".history_entry ";
+                    //qry += " WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ";
+                    //qry += " ON he1.orderId = he2.orderId AND he1.id = he2.maxId ";
+                    //qry += " WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
+
+                    //qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
+                    //qry += " WHERE O.OrderPlacedAt BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                    //qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) ";
+                    //qry += " AND py.state IN ('Settled', 'Authorized') ";
+                    //qry += " AND O.state NOT IN ('DELIVERED', 'CANCELLED', 'AddingItems', 'CancellationRequested') ";
+                    //if (locationId == 4)
+                    //{
+                    //    qry += " AND st.name = 'Tomorrow Morning Delivery (Rs.40 incl.Tax)' ";
+                    //}
+                    //else if (locationId == 6)
+                    //{
+                    //    qry += " AND st.name = 'Tomorrow Morning Delivery (Rs.50 incl.Tax)' ";
+                    //}
+                    //qry += " AND ch.channelId = " + locationId;
+                    ////qry+= " and S.Cancelled=0 ";
+                    ////  qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
+                    ////qry += " CustomerId,OL.ListPrice,P.name,py.metadata ";
+                    //if (locationId == 4 || locationId == 6)
+                    //{
+                    //    qry += " Union All ";
+                    //    //qry += " SELECT Distinct O.iD,SKU AS PCODE,'' as SNo,CODE, ";
+                    //    //qry += " CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer, ";
+                    //    //qry += " '' as Address,'' as CellNo,trim(P.name) as ItemName,'' as TamilName,";
+                    //    //qry += " (Quantity) as Qty,OL.ListPrice/100 as Rate, ((Quantity)*(OL.Listprice/100)) as Total, ";
+                    //    //qry += " subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping, ";
+                    //    //qry += " (subTotalWithTax+shippingWithTax)/100 as NetTotal,st.name as DeliveryTime, ";
+                    //    //qry += " customFieldsOtherinstructions as CuttingInstructions,2 as OrdNo,CustomerId,'' as Pincode,py.metadata, ";
+                    //    //qry += " '' as PaymentStatus ";
+                    //    //qry += " FROM ";
+                    //    //qry += CommonView.DataBase + ".order_line OL, ";
+                    //    //qry += " " + CommonView.DataBase + ".product_variant_translation P,";//+ CommonView.DataBase + ".order_item  S, ";
+                    //    //qry += " " + CommonView.DataBase + ".shipping_line sl, ";
+                    //    //qry += " " + CommonView.DataBase + ".shipping_method_translation st,  " + CommonView.DataBase + ".product_variant_price op, ";
+                    //    //qry += " " + CommonView.DataBase + ".product_variant PV, ";
+                    //    //qry += CommonView.DataBase + ".order O ";
+                    //    //qry += " left join " + CommonView.DataBase + ".payment py on py.OrderId=O.Id";
+                    //    //qry += " left join " + CommonView.DataBase + ".order_channels_channel ch on O.Id=ch.OrderId ";
+                    //    //qry += " WHERE O.ID=OL.ORDERID and ";//py.OrderId=O.Id 
+                    //    //qry += " OL.PRODUCTVARIANTID=P.ID AND "; //S.LINEID=OL.ID and ";
+                    //    //qry += " sl.OrderId=O.Id and sl.shippingmethodid=st.Id and sl.OrderId=O.Id and op.variantid=OL.productvariantid and ";
+                    //    ////  qry += " op.variantid=P.id AND PV.iD=P.ID AND CAST(O.OrderPlacedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' and ";
+                    //    //qry += " op.variantid=P.id AND PV.iD=P.ID and ";
+                    //    ////AND O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 19:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
+                    //    qry += " SELECT DISTINCT ";
+                    //    qry += " O.id, ";
+                    //    qry += " SKU AS PCode, ";
+                    //    qry += " '' AS SNo, ";
+                    //    qry += " Code, ";
+                    //    qry += " CAST(O.OrderPlacedAt AS DATE) AS Date, ";
+                    //    qry += " CAST(O.updatedAt AS TIME) AS Time, ";
+                    //    qry += " ShippingAddress AS BillingAddress, ";
+                    //    qry += " '' AS Customer, ";
+                    //    qry += " '' AS Address, ";
+                    //    qry += " '' AS CellNo, ";
+                    //    qry += " TRIM(P.name) AS ItemName, ";
+                    //    qry += " '' AS TamilName, ";
+                    //    qry += " Quantity AS Qty, ";
+                    //    qry += " pv.customFieldsShadowprice / 100 AS ShadowPrice, ";
+                    //    qry += " op.price / 100 AS Rate, ";
+                    //    qry += " (Quantity * (op.price / 100)) AS Total, ";
+                    //    qry += " subTotalWithTax / 100 AS SubTotal, ";
+                    //    qry += " shippingWithTax / 100 AS Shipping, ";
+                    //    qry += " (subTotalWithTax + shippingWithTax) / 100 AS NetTotal, ";
+                    //    qry += " st.name AS DeliveryTime, ";
+                    //    qry += " customFieldsOtherinstructions AS CuttingInstructions, ";
+                    //    qry += " COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '') AS PaymentMode, ";
+                    //    qry += " 2 AS OrdNo, ";
+                    //    qry += " CustomerId, ";
+                    //    qry += " '' AS Pincode, ";
+                    //    qry += " py.metadata, ";
+                    //    qry += " '' AS PaymentStatus, ";
+                    //    qry += " O.customFieldsLoyaltypointsused AS RewardPointUsed, ";
+                    //    qry += " O.couponCodes AS CouponCode, ";
+                    //    qry += " om.note AS Note ";
+                    //    qry += " FROM " + CommonView.DataBase + ".`order` O ";
+                    //    qry += " INNER JOIN " + CommonView.DataBase + ".order_line OL ON O.id = OL.orderId ";
+                    //    qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_translation P ON OL.productVariantId = P.id ";
+                    //    qry += " INNER JOIN " + CommonView.DataBase + ".shipping_line sl ON sl.orderId = O.id ";
+                    //    qry += " INNER JOIN " + CommonView.DataBase + ".shipping_method_translation st ON sl.shippingMethodId = st.id ";
+                    //    qry += " INNER JOIN " + CommonView.DataBase + ".order_channels_channel ch ON ch.orderId = O.id ";
+                    //    qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_price op ON op.variantId = OL.productVariantId AND op.channelId = ch.channelId ";
+                    //    qry += " INNER JOIN " + CommonView.DataBase + ".product_variant pv ON pv.id = OL.productVariantId ";
+                    //    qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.orderId = O.id ";
+                    //    qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.id = om.orderId ";
+                    //    qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) AS maxId FROM " + CommonView.DataBase + ".history_entry WHERE type = 'ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type = 'ORDER_NOTE') he ON O.id = he.orderId ";
+                    //    qry += " WHERE O.OrderPlacedAt BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                    //    qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) ";
+                    //    qry += " AND py.state IN ('Settled', 'Authorized') ";
+                    //    qry += " AND O.state NOT IN ('DELIVERED', 'CANCELLED', 'AddingItems', 'CancellationRequested') ";
+                    //    if (locationId == 4)
+                    //    {
+                    //        qry += " AND st.name = 'Tomorrow Evening Delivery (Rs.20 incl.Tax)' ";
+                    //    }
+                    //    else if (locationId == 6)
+                    //    {
+                    //        qry += " AND st.name = 'Tomorrow Evening Delivery (Rs.30 incl.Tax)' ";
+                    //    }
+                    //    qry += " AND ch.channelId = " + locationId;
+                    //    //  qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
+                    //    // qry += " CustomerId,py.metadata,";
+                    //    //qry += " OL.ListPrice,P.name ";
+
+                    //                }
+                    //qry += " ) a  ";
+                    //qry += " ORDER BY OrdNo, Time,Code; ";
+                    qry = " SELECT O.id,SKU AS PCode,'' AS SNo,O.Code,CAST(O.OrderPlacedAt AS DATE) AS Date,CAST(O.updatedAt AS TIME) AS Time,";
                     qry += " ShippingAddress AS BillingAddress, ";
                     qry += " '' AS Customer, ";
                     qry += " '' AS Address, ";
                     qry += " '' AS CellNo, ";
-                    qry += " TRIM(P.name) AS ItemName, ";
-                    qry += " '' AS TamilName, ";
-                    qry += " Quantity AS Qty, ";
-                    qry += "pv.customFieldsShadowprice/100 AS ShadowPrice, ";
-                    qry += " OL.ListPrice/100 AS Rate, ";
-                    qry += " (Quantity * (OL.ListPrice/100)) AS Total, ";
-                    qry += " subTotalWithTax/100 AS SubTotal, ";
-                    qry += " shippingWithTax/100 AS Shipping, ";
-                    qry += " (subTotalWithTax + shippingWithTax)/100 AS NetTotal, ";
-                    qry += " st.name AS DeliveryTime, ";
-                    qry += " customFieldsOtherinstructions AS CuttingInstructions, ";
-                    qry += " COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '' ) AS PaymentMode,";
-                    qry += " 1 AS OrdNo, ";
-                    qry += " CustomerId, ";
-                    qry += " '' AS Pincode, ";
-                    qry += " py.metadata, ";
-                    qry += " '' AS PaymentStatus,";
-                   qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
-                    qry += "O.couponCodes AS CouponCode,";
-                    qry += "om.note AS Note";
-                    qry += " FROM " + CommonView.DataBase + ".`order` O ";
-                    qry += " INNER JOIN " + CommonView.DataBase + ".order_line OL ON O.ID = OL.ORDERID ";
-                    qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_translation P ON OL.PRODUCTVARIANTID = P.ID ";
-                    qry += " INNER JOIN " + CommonView.DataBase + ".shipping_line sl ON sl.OrderId = O.Id ";
-                    qry += " INNER JOIN " + CommonView.DataBase + ".shipping_method_translation st ON sl.shippingmethodid = st.Id ";
-                    qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_price op ON op.variantid = OL.productvariantid AND op.variantid = P.id ";
-                    qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
-                    qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
-                    qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
-                    qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
-                    qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
-                    //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                    qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                    qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)";
-                    qry += " AND py.state IN('Settled','Authorized')";
-                    qry += " AND O.State NOT IN ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') and  ";
-                                                          // C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\Reports\Class1.cs
+                    qry += " TRIM(P.name) AS ItemName,'' as TamilName,OL.Quantity AS Qty,pv.customFieldsShadowprice / 100 AS ShadowPrice,OL.ListPrice / 100 AS Rate,";
+                    qry += " (OL.Quantity * (OL.ListPrice / 100)) AS Total,O.subTotalWithTax / 100 AS SubTotal,O.shippingWithTax / 100 AS Shipping,";
+                    qry += " (O.subTotalWithTax + O.shippingWithTax) / 100 AS NetTotal,st.name AS DeliveryTime,O.customFieldsOtherinstructions AS CuttingInstructions,";
+                    qry += " COALESCE(";
+                    qry += " JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')),";
+                    qry += " '') AS PaymentMode,1 AS OrdNo,O.CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus, O.customFieldsLoyaltypointsused AS RewardPointUsed,O.couponCodes AS CouponCode,om.note";
+                    qry += " FROM " + CommonView.DataBase +".`order` O";
+                    qry += " INNER JOIN " + CommonView.DataBase +".order_line OL ON O.id = OL.orderId";
+                    qry += " INNER JOIN " + CommonView.DataBase +".product_variant_translation P ON OL.productVariantId = P.id";
+                    qry += " INNER JOIN " + CommonView.DataBase + ".product_variant pv ON pv.id = OL.productVariantId";
+                    qry += " INNER JOIN " + CommonView.DataBase + ".shipping_line sl ON sl.orderId = O.id";
+                    qry += " INNER JOIN " + CommonView.DataBase + ".shipping_method_translation st ON st.id = sl.shippingMethodId";
+                    qry += " INNER JOIN " + CommonView.DataBase + ".order_channels_channel ch ON ch.orderId = O.id";
+
+                    qry += " INNER JOIN (SELECT variantId, channelId, MAX(price) AS price FROM " + CommonView.DataBase + ".product_variant_price GROUP BY variantId, channelId";
+                    qry += " ) op ON op.variantId = OL.productVariantId AND op.channelId = ch.channelId";
+
+                    qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.id = (SELECT MAX(p2.id) FROM wow_vendure.payment p2 WHERE p2.orderId = O.id";
+                    qry += " AND p2.state IN ('Settled', 'Authorized'))";
+
+                    qry += " LEFT JOIN " + CommonView.DataBase + ".history_entry he ON he.id = (";
+                    qry += " SELECT MAX(h2.id)";
+                    qry += " FROM " + CommonView.DataBase + ".history_entry h2";
+                    qry += " WHERE h2.orderId = O.id";
+                    qry += " AND h2.type = 'ORDER_NOTE'";
+                    qry += " )";
+
+                    qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON om.id = (";
+                    qry += " SELECT MAX(m2.id)";
+                    qry += "    FROM " + CommonView.DataBase + ".order_modification m2";
+                    qry += " WHERE m2.orderId = O.id";
+                    qry += " )";
+
+                    qry += " WHERE";
+                    qry += " O.OrderPlacedAt BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                    qry += " AND (O.customFieldsCancellationreason IS NULL ";
+                    qry += " OR O.customFieldsCancellationreason = '')";
+                    qry += " AND O.state NOT IN ('DELIVERED','CANCELLED','AddingItems','CancellationRequested')";
                     if (locationId == 4)
                     {
-                        qry += " st.name = 'Tomorrow Morning Delivery (Rs.40 incl.Tax)' AND ";
+                        qry += " AND st.name = 'Tomorrow Morning Delivery (Rs.40 incl.Tax)' ";
                     }
                     else if (locationId == 6)
                     {
-                        qry += " st.name = 'Tomorrow Morning Delivery (Rs.50 incl.Tax)' AND ";
+                        qry += " AND st.name = 'Tomorrow Morning Delivery (Rs.50 incl.Tax)' ";
                     }
-
-                    qry += " ch.ChannelId= " + locationId;
-                    //qry+= " and S.Cancelled=0 ";
-                    //  qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
-                    //qry += " CustomerId,OL.ListPrice,P.name,py.metadata ";
+                    qry += " AND ch.channelId = " + locationId;
                     if (locationId == 4 || locationId == 6)
                     {
-                        qry += " Union All ";
-                        //qry += " SELECT Distinct O.iD,SKU AS PCODE,'' as SNo,CODE, ";
-                        //qry += " CAST(O.updatedAt AS DATE)Date,CAST(O.updatedAt AS TIME)TIME,ShippingAddress as BillingAddress,'' as Customer, ";
-                        //qry += " '' as Address,'' as CellNo,trim(P.name) as ItemName,'' as TamilName,";
-                        //qry += " (Quantity) as Qty,OL.ListPrice/100 as Rate, ((Quantity)*(OL.Listprice/100)) as Total, ";
-                        //qry += " subTotalWithTax/100 as SubTotal,shippingWithTax/100 as Shipping, ";
-                        //qry += " (subTotalWithTax+shippingWithTax)/100 as NetTotal,st.name as DeliveryTime, ";
-                        //qry += " customFieldsOtherinstructions as CuttingInstructions,2 as OrdNo,CustomerId,'' as Pincode,py.metadata, ";
-                        //qry += " '' as PaymentStatus ";
-                        //qry += " FROM ";
-                        //qry += CommonView.DataBase + ".order_line OL, ";
-                        //qry += " " + CommonView.DataBase + ".product_variant_translation P,";//+ CommonView.DataBase + ".order_item  S, ";
-                        //qry += " " + CommonView.DataBase + ".shipping_line sl, ";
-                        //qry += " " + CommonView.DataBase + ".shipping_method_translation st,  " + CommonView.DataBase + ".product_variant_price op, ";
-                        //qry += " " + CommonView.DataBase + ".product_variant PV, ";
-                        //qry += CommonView.DataBase + ".order O ";
-                        //qry += " left join " + CommonView.DataBase + ".payment py on py.OrderId=O.Id";
-                        //qry += " left join " + CommonView.DataBase + ".order_channels_channel ch on O.Id=ch.OrderId ";
-                        //qry += " WHERE O.ID=OL.ORDERID and ";//py.OrderId=O.Id 
-                        //qry += " OL.PRODUCTVARIANTID=P.ID AND "; //S.LINEID=OL.ID and ";
-                        //qry += " sl.OrderId=O.Id and sl.shippingmethodid=st.Id and sl.OrderId=O.Id and op.variantid=OL.productvariantid and ";
-                        ////  qry += " op.variantid=P.id AND PV.iD=P.ID AND CAST(O.OrderPlacedAt AS DATE) between '" + fDt.ToString("yyyy/MM/dd") + "' AND '" + tDt.ToString("yyyy/MM/dd") + "' and ";
-                        //qry += " op.variantid=P.id AND PV.iD=P.ID and ";
-                        ////AND O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 19:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
-                        qry += " SELECT DISTINCT ";
-                        qry += " O.id, ";
-                        qry += " SKU AS PCode, ";
-                        qry += " '' AS SNo, ";
-                        qry += " Code, ";
-                        qry += " CAST(O.OrderPlacedAt AS DATE) AS Date, ";
-                        qry += " CAST(O.updatedAt AS TIME) AS Time, ";
+
+                        qry += " UNION ALL";
+
+                        qry += " SELECT O.id,SKU AS PCode,'' AS SNo,O.Code,CAST(O.OrderPlacedAt AS DATE) AS Date,CAST(O.updatedAt AS TIME) AS Time,";
                         qry += " ShippingAddress AS BillingAddress, ";
                         qry += " '' AS Customer, ";
                         qry += " '' AS Address, ";
                         qry += " '' AS CellNo, ";
-                        qry += " TRIM(P.name) AS ItemName, ";
-                        qry += " '' AS TamilName, ";
-                        qry += " Quantity AS Qty, ";
-                        qry += "pv.customFieldsShadowprice/100 AS ShadowPrice, ";
-                        qry += " OL.ListPrice/100 AS Rate, ";
-                        qry += " (Quantity * (OL.ListPrice/100)) AS Total, ";
-                        qry += " subTotalWithTax/100 AS SubTotal, ";
-                        qry += " shippingWithTax/100 AS Shipping, ";
-                        qry += " (subTotalWithTax + shippingWithTax)/100 AS NetTotal, ";
-                        qry += " st.name AS DeliveryTime, ";
-                        qry += " customFieldsOtherinstructions AS CuttingInstructions, ";
-                        qry += " COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '' ) AS PaymentMode,";
-                        qry += " 2 AS OrdNo, ";
-                        qry += " CustomerId, ";
-                        qry += " '' AS Pincode, ";
-                        qry += " py.metadata, ";
-                        qry += " '' AS PaymentStatus, ";
-                        qry += "O.customFieldsLoyaltypointsused AS RewardPointUsed,";
-                        qry += "O.couponCodes AS CouponCode,";
-                        qry += "om.note AS Note";
-                        qry += " FROM " + CommonView.DataBase + ".`order` O ";
-                        qry += " INNER JOIN " + CommonView.DataBase + ".order_line OL ON O.ID = OL.ORDERID ";
-                        qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_translation P ON OL.PRODUCTVARIANTID = P.ID ";
-                        qry += " INNER JOIN " + CommonView.DataBase + ".shipping_line sl ON sl.OrderId = O.Id ";
-                        qry += " INNER JOIN " + CommonView.DataBase + ".shipping_method_translation st ON sl.shippingmethodid = st.Id ";
-                        qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_price op ON op.variantid = OL.productvariantid AND op.variantid = P.id ";
-                        qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
-                        qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
-                        qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
-                        qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
-                        qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
-                        // qry += " Where customFieldsPlacedatistformatted between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
-                        qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' and ";
-                        qry += " (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and py.state IN('Settled','Authorized') AND O.State not in ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') and ";
+                        qry += " TRIM(P.name) AS ItemName,'' as TamilName,OL.Quantity AS Qty,pv.customFieldsShadowprice / 100 AS ShadowPrice,OL.ListPrice / 100 AS Rate,";
+                        qry += " (OL.Quantity * (OL.ListPrice / 100)) AS Total,O.subTotalWithTax / 100 AS SubTotal,O.shippingWithTax / 100 AS Shipping,";
+                        qry += " (O.subTotalWithTax + O.shippingWithTax) / 100 AS NetTotal,st.name AS DeliveryTime,O.customFieldsOtherinstructions AS CuttingInstructions,";
+                        qry += " COALESCE(";
+                        qry += " JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')),";
+                        qry += " '') AS PaymentMode,2 AS OrdNo,O.CustomerId,'' as Pincode,py.metadata,'' as PaymentStatus, O.customFieldsLoyaltypointsused AS RewardPointUsed,O.couponCodes AS CouponCode,om.note";
+                        qry += " FROM " + CommonView.DataBase + ".`order` O";
+                        qry += " INNER JOIN " + CommonView.DataBase + ".order_line OL ON O.id = OL.orderId";
+                        qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_translation P ON OL.productVariantId = P.id";
+                        qry += " INNER JOIN " + CommonView.DataBase + ".product_variant pv ON pv.id = OL.productVariantId";
+                        qry += " INNER JOIN " + CommonView.DataBase + ".shipping_line sl ON sl.orderId = O.id";
+                        qry += " INNER JOIN " + CommonView.DataBase + ".shipping_method_translation st ON st.id = sl.shippingMethodId";
+                        qry += " INNER JOIN " + CommonView.DataBase + ".order_channels_channel ch ON ch.orderId = O.id";
+
+                        qry += " INNER JOIN (";
+                        qry += " SELECT variantId, channelId, MAX(price) AS price";
+                        qry += " FROM " + CommonView.DataBase + ".product_variant_price";
+                        qry += " GROUP BY variantId, channelId";
+                        qry += " ) op ON op.variantId = OL.productVariantId";
+                        qry += " AND op.channelId = ch.channelId";
+
+                        qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.id = (";
+                        qry += " SELECT MAX(p2.id)";
+                        qry += " FROM " + CommonView.DataBase + ".payment p2";
+                        qry += " WHERE p2.orderId = O.id";
+                        qry += " AND p2.state IN ('Settled', 'Authorized')";
+                        qry += " )";
+
+                        qry += " LEFT JOIN " + CommonView.DataBase + ".history_entry he ON he.id = (";
+                        qry += " SELECT MAX(h2.id)";
+                        qry += " FROM " + CommonView.DataBase + ".history_entry h2";
+                        qry += " WHERE h2.orderId = O.id";
+                        qry += " AND h2.type = 'ORDER_NOTE'";
+                        qry += " )";
+
+                        qry += "LEFT JOIN " + CommonView.DataBase + ".order_modification om ON om.id = (";
+                        qry += " SELECT MAX(m2.id)";
+                        qry += " FROM " + CommonView.DataBase + ".order_modification m2";
+                        qry += " WHERE m2.orderId = O.id";
+                        qry += " )";
+
+                        qry += " WHERE";
+                        qry += " O.OrderPlacedAt BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                        qry += "    AND (O.customFieldsCancellationreason IS NULL ";
+                        qry += "   OR O.customFieldsCancellationreason = '')";
+                        qry += " AND O.state NOT IN ('DELIVERED','CANCELLED','AddingItems','CancellationRequested')";
                         if (locationId == 4)
                         {
-                            qry += " st.name = 'Tomorrow Evening Delivery (Rs.20 incl.Tax)' AND ";
+                            qry += " and st.name = 'Tomorrow Evening Delivery (Rs.20 incl.Tax)' ";
                         }
                         else if (locationId == 6)
                         {
-                            qry += " st.name = 'Tomorrow Evening Delivery (Rs.30 incl.Tax)' AND ";
+                            qry += " and st.name = 'Tomorrow Evening Delivery (Rs.30 incl.Tax)' ";
                         }
-                       qry += " ch.ChannelId=" + locationId; //and S.Cancelled=0";
-                        //  qry += " group by O.iD,SKU ,CODE,O.updatedAt,ShippingAddress,subTotalWithTax,shippingWithTax,st.Name,customFieldsOtherinstructions, ";
-                        // qry += " CustomerId,py.metadata,";
-                        //qry += " OL.ListPrice,P.name ";
-
-                                    }
-                    qry += " ) a  ";
-                    qry += " ORDER BY OrdNo, Time,Code; ";
-
+                        qry += " and ch.channelid = " + locationId;
+                    }
+                    qry += " ORDER BY OrdNo, Time, Code";
 
                 }
                 else if (timeType == "LESS")
@@ -545,16 +673,16 @@ namespace DataClass
                     qry += " ON ch.OrderId = O.Id ";
                     qry += " AND ch.ChannelId = " + locationId;//       -- ✅ ensures only one matching row per order
                     qry += " WHERE ";
-                    qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                    qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)";
                     qry += " AND O.State NOT IN ('DELIVERED', 'CANCELLED', 'AddingItems','CancellationRequested') ";
                     if (locationId == 4 || locationId == 6)
                     { qry += " AND st.name LIKE 'Tomorrow Morning Delivery%' "; }
-                     qry += " GROUP BY  ";
+                    qry += " GROUP BY  ";
                     qry += " pv.SKU, ";
                     qry += " P.name, ";
                     qry += " st.Name ";
-                    if (locationId == 4 || locationId == 6 )
+                    if (locationId == 4 || locationId == 6)
                     {
                         qry += " Union All ";
 
@@ -611,14 +739,14 @@ namespace DataClass
                         qry += " ON ch.OrderId = O.Id ";
                         qry += " AND ch.ChannelId = " + locationId;//       -- ✅ ensures only one matching row per order
                         qry += " WHERE ";
-                        qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                        qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                         qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) ";
                         qry += " AND O.State NOT IN ('DELIVERED', 'CANCELLED', 'AddingItems','CancellationRequested') ";
-                        if (locationId == 4 || locationId ==6)
+                        if (locationId == 4 || locationId == 6)
                         {
                             qry += " AND st.name LIKE 'Tomorrow Evening Delivery%' ";
                         }
-                       // qry += " ch.ChannelId=" + locationId;
+                        // qry += " ch.ChannelId=" + locationId;
                         //qry += " Group by ItemName ";
                         qry += " GROUP BY  ";
                         qry += " pv.SKU, ";
@@ -713,16 +841,25 @@ namespace DataClass
                 qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
                 qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
                 qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
-               
+
                 //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                 qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                 qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)  and O.State not in ('DELIVERED','CANCELLED','AddingItems') and ";
+                //changed - Added Coimbatore (locationId == 6) Morning delivery filter support
                 if (locationId == 4)
                 { qry += "  st.Name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and "; }
+                else if (locationId == 6)
+                { qry += "  st.Name='Tomorrow Morning Delivery (Rs.50 incl.Tax)' and "; }
+                //changed - Old code that only supported Madurai (locationId == 4) Morning delivery
+                //if (locationId == 4)
+                //{ qry += "  st.Name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' and "; }
                 qry += " ch.ChannelId= " + locationId;
                 //  and st.Name='Tomorrow Morning Delivery (Rs.50 incl.Tax)' ";
                 // qry += "  and py.orderid=12874";
-                if (locationId == 4)
+                //changed - Added Coimbatore (locationId == 6) to UNION ALL condition for Evening delivery support
+                if (locationId == 4 || locationId == 6)
+                //changed - Old code that only supported Madurai (locationId == 4) Evening delivery
+                //if (locationId == 4)
                 {
                     qry += " Union All";
                     qry += " SELECT Distinct DENSE_RANK() OVER (ORDER BY Code) as SNo,CODE,Metadata,customFieldsOtherinstructions as CuttingInstructions,COALESCE(JSON_UNQUOTE(JSON_EXTRACT(CAST(he.data AS JSON), '$.note')), '' ) AS PaymentMode,(subTotalWithTax+shippingWithTax)/100 as NetTotal,CAST(O.updatedAt AS TIME) AS Time,ShippingAddress as BillingAddress,2 as OrdNo,CustomerId,'' as Pincode,'' as PaymentStatus,om.note as Note";
@@ -746,7 +883,14 @@ namespace DataClass
                     qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
                     //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                    qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  ";
+                    qry += " AND (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) and O.State not in ('DELIVERED','CANCELLED','CancellationRequested') and ";
+                    //changed - Added Coimbatore (locationId == 6) Evening delivery filter support
+                    if (locationId == 4)
+                    { qry += " st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  "; }
+                    else if (locationId == 6)
+                    { qry += " st.Name='Tomorrow Evening Delivery (Rs.30 incl.Tax)'  "; }
+                    //changed - Old code that only supported Madurai (locationId == 4) Evening delivery with hardcoded Rs.20
+                    //qry += " st.Name='Tomorrow Evening Delivery (Rs.20 incl.Tax)'  ";
                     qry += " and ch.ChannelId= " + locationId;
                     // qry += "  and py.orderid=12874";
                 }
@@ -943,7 +1087,7 @@ namespace DataClass
             tmp.Add(CommonView.GetGridViewColumn("OrdNo", "OrdNo", 0, 27, true));
             tmp.Add(CommonView.GetGridViewColumn("MetaData", "MetaData", 0, 28, true));
             tmp.Add(CommonView.GetGridViewColumn("PaymentStatus", "PaymentStatus", 100, 29, true));
-            tmp.Add(CommonView.GetGridViewColumn("RewardPointUsed", "RewardPointUsed",100, 30, true));
+            tmp.Add(CommonView.GetGridViewColumn("RewardPointUsed", "RewardPointUsed", 100, 30, true));
             tmp.Add(CommonView.GetGridViewColumn("CouponCode", "CouponCode", 100, 31, true));
             tmp.Add(CommonView.GetGridViewColumn("Note", "Note", 100, 32, true));
             tmp.GetFirstColumn(DataGridViewElementStates.None).Visible = false;
@@ -1087,7 +1231,7 @@ namespace DataClass
             }
         }
         public void updatePriceList(string code, int price, int shadowPrice, int stockOnHand, string hsnCode, int channelId)
-                    {
+        {
 
             try
             {
@@ -1128,7 +1272,7 @@ namespace DataClass
                 Cmd2.ExecuteNonQuery();
                 Cmd2.Dispose();
 
-              
+
                 string qry3 = "UPDATE " + CommonView.DataBase + ".stock_level sl " +
                               "JOIN " + CommonView.DataBase + ".product_variant pv " +
                               "  ON pv.id = sl.productVariantId " +
@@ -1143,13 +1287,13 @@ namespace DataClass
                 Cmd3.ExecuteNonQuery();
                 Cmd3.Dispose();
 
-            
+
                 string qry4 = "UPDATE " + CommonView.DataBase + ".product p " +
                               "JOIN " + CommonView.DataBase + ".product_variant pv " +
                               "  ON pv.productId = p.id " +
                               "JOIN " + CommonView.DataBase + ".product_variant_channels_channel pvc " +
                               "  ON pv.id = pvc.productVariantId " +
-                              "SET p.customFieldsHsncode = '" + hsnCode +"' " + 
+                              "SET p.customFieldsHsncode = '" + hsnCode + "' " +
                               "WHERE pv.sku = '" + code + "' " +
                               "AND pvc.channelId = " + channelId + " " +
                               "AND p.enabled = 1;";

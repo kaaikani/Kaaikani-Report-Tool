@@ -728,3 +728,124 @@ C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmCancel
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
 C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\GridStructures.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache

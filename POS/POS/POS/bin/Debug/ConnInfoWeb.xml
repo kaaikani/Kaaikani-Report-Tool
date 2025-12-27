@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ConnInFo>
-	<DBServer>13.127.170.73</DBServer>
+	<DBServer>127.0.0.1</DBServer>
 	<DataBase>wow_vendure</DataBase>
 	<UserId>admin</UserId>
-<Pwd>xNuqTq1H7RQD1H5FJNhv</Pwd>
-        <Port>3306</Port>  
-<sms>0</sms>     
+<Pwd>gFk0esn8bBSso84G29bl</Pwd>
+        <Port>3307</Port>  
+<sms>0</sms>     
 </ConnInFo>

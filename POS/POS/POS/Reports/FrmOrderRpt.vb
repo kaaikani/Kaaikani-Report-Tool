@@ -4,6 +4,7 @@ Imports System.Drawing.Imaging
 Imports System.Drawing.Printing
 Imports System.Windows
 Imports System.Windows.Forms
+Imports System.Collections.Generic
 Public Class FrmOrderRpt
     Dim RptObj As New DataClass.OrderwiseRpt
     Dim blnProcess As Boolean = False
@@ -133,7 +134,7 @@ Public Class FrmOrderRpt
                     rptLoad.Rows(i)("Date") = ReportTable.Rows(i)("Date")
                     rptLoad.Rows(i)("Time") = ReportTable.Rows(i)("Time")
                     rptLoad.Rows(i)("MetaData") = ReportTable.Rows(i)("MetaData")
-                    rptLoad.Rows(i)("ShadowPrice") = ReportTable.Rows(i)("ShadowPrice")
+                    rptLoad.Rows(i)("ShadowPrice") = Val(ReportTable.Rows(i)("ShadowPrice").ToString()) * 100
                     rptLoad.Rows(i)("RewardPointUsed") = ReportTable.Rows(i)("RewardPointUsed")
                     rptLoad.Rows(i)("CouponCode") = ReportTable.Rows(i)("CouponCode")
                     rptLoad.Rows(i)("Note") = ReportTable.Rows(i)("Note")
@@ -381,7 +382,7 @@ Public Class FrmOrderRpt
                                     RptObj.updatePriceList(
                                         dtTable.Rows(cnt)("SKU").ToString(),
                                         Val(dtTable.Rows(cnt)("Price").ToString()) * 100,
-                                        Val(dtTable.Rows(cnt)("Shadow Price").ToString()) * 100,
+                                        Val(dtTable.Rows(cnt)("Shadow Price").ToString()),
                                         Val(dtTable.Rows(cnt)("Stock").ToString()),
                                         dtTable.Rows(cnt)("HSN code").ToString(),
                                         channelId
@@ -1197,16 +1198,35 @@ Public Class FrmOrderRpt
                             Dim dataView1 As DataView = dtSNoTbl.DefaultView
                             dataView1.RowFilter = "PCode ='" + rptLoad.Rows(i)("PCode").ToString().Trim() + "' and DeliveryTime='" + rptLoad.Rows(i)("DeliveryTime").ToString().Trim() + "'"
                             dt1 = dataView1.ToTable
+
+                            ' Get the cumulative Qty from the report
+                            Dim cumulativeQty As Integer = Val(rptLoad.Rows(i)("Qty").ToString())
+
+                            ' Collect all SNo values from matching detail rows
+                            Dim sNoList As New List(Of String)
                             For k As Integer = 0 To dt1.Rows.Count - 1
-                                If Val(dt1.Rows(k)("Qty")) > 1 Then
-                                    Dim qty As Double = Val(dt1.Rows(k)("Qty"))
-                                    For j As Integer = 0 To qty - 1
-                                        sNoStr += dt1.Rows(k)("SNo").ToString().Trim() + ","
-                                    Next
-                                Else
-                                    sNoStr += dt1.Rows(k)("SNo").ToString().Trim() + ","
-                                End If
+                                Dim detailQty As Integer = Val(dt1.Rows(k)("Qty").ToString())
+                                Dim sNoValue As String = dt1.Rows(k)("SNo").ToString().Trim()
+                                ' Add SNo for each quantity in the detail row
+                                For j As Integer = 0 To detailQty - 1
+                                    sNoList.Add(sNoValue)
+                                Next
                             Next
+
+                            ' Take exactly as many SNo values as the cumulative Qty
+                            Dim countToTake As Integer = Math.Min(cumulativeQty, sNoList.Count)
+                            For idx As Integer = 0 To countToTake - 1
+                                sNoStr += sNoList(idx) + ","
+                            Next
+
+                            ' If we need more SNo values than available, repeat the last one
+                            If cumulativeQty > sNoList.Count AndAlso sNoList.Count > 0 Then
+                                Dim lastSNo As String = sNoList(sNoList.Count - 1)
+                                For idx As Integer = sNoList.Count To cumulativeQty - 1
+                                    sNoStr += lastSNo + ","
+                                Next
+                            End If
+
                             If sNoStr <> "" Then
                                 sNoStr = sNoStr.Remove(sNoStr.Length - 1, 1)
                             End If
