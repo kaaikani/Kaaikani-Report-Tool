@@ -339,7 +339,7 @@ namespace DataClass
                     qry += " )";
 
                     qry += " WHERE";
-                    qry += " O.OrderPlacedAt BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                    qry += " O.OrderPlacedAt BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " AND (O.customFieldsCancellationreason IS NULL ";
                     qry += " OR O.customFieldsCancellationreason = '')";
                     qry += " AND O.state NOT IN ('DELIVERED','CANCELLED','AddingItems','CancellationRequested')";
@@ -404,7 +404,7 @@ namespace DataClass
                         qry += " )";
 
                         qry += " WHERE";
-                        qry += " O.OrderPlacedAt BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                        qry += " O.OrderPlacedAt BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                         qry += "    AND (O.customFieldsCancellationreason IS NULL ";
                         qry += "   OR O.customFieldsCancellationreason = '')";
                         qry += " AND O.state NOT IN ('DELIVERED','CANCELLED','AddingItems','CancellationRequested')";
@@ -673,7 +673,7 @@ namespace DataClass
                     qry += " ON ch.OrderId = O.Id ";
                     qry += " AND ch.ChannelId = " + locationId;//       -- ✅ ensures only one matching row per order
                     qry += " WHERE ";
-                    qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                    qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)";
                     qry += " AND O.State NOT IN ('DELIVERED', 'CANCELLED', 'AddingItems','CancellationRequested') ";
                     if (locationId == 4 || locationId == 6)
@@ -739,7 +739,7 @@ namespace DataClass
                         qry += " ON ch.OrderId = O.Id ";
                         qry += " AND ch.ChannelId = " + locationId;//       -- ✅ ensures only one matching row per order
                         qry += " WHERE ";
-                        qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
+                        qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                         qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) ";
                         qry += " AND O.State NOT IN ('DELIVERED', 'CANCELLED', 'AddingItems','CancellationRequested') ";
                         if (locationId == 4 || locationId == 6)

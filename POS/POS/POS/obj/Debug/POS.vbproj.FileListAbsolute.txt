@@ -820,9 +820,6 @@ G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\PO
 G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
 G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
 C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
-C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
-C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
-C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
 C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
 C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
 C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
@@ -849,3 +846,6 @@ C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking 
 C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
 C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
 C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
