@@ -1,0 +1,138 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SMS
+</name>
+</assembly>
+<members>
+<member name="T:SMS.Rpt_DataSet.Qry_StudentBalRptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptBillEntryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptArrivalDetDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptArrivalSummaryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptDatewisePaidBillDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptSupplierwisePaidBillDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptUnPaidBillDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_ArrivalBillDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptSupplierwiseArrivalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptMangowiseArrivalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_StudentBalRptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptBillEntryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptArrivalDetRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptArrivalSummaryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptDatewisePaidBillRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptSupplierwisePaidBillRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptUnPaidBillRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_ArrivalBillRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptSupplierwiseArrivalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptMangowiseArrivalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_StudentBalRptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptBillEntryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptArrivalDetRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptArrivalSummaryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptDatewisePaidBillRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptSupplierwisePaidBillRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptUnPaidBillRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_ArrivalBillRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptSupplierwiseArrivalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet.Qry_RptMangowiseArrivalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SMS.Rpt_DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="F:SMS.FrmDayBookLedger.CatObj">
+===========Common Objects==============
+
+</member>
+</members>
+</doc>

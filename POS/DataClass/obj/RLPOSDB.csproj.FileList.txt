@@ -1,0 +1,11 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\RLPOSDB.Properties.Resources.resources
+obj\Debug\RLPOSDB.csproj.GenerateResource.Cache
+obj\Debug\RLPOSDB.dll
+obj\Debug\RLPOSDB.pdb
+bin\Debug\RLPOSDB.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\RLPOSDB.Properties.Resources.resources
+obj\Release\RLPOSDB.csproj.GenerateResource.Cache
+obj\Release\RLPOSDB.dll
+obj\Release\RLPOSDB.pdb

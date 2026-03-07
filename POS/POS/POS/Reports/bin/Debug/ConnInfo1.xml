@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ConnInFo>
+	<DBServer>zion.iad1-mysql-e2-9a.dreamhost.com</DBServer>
+<UserName>kaaikani</UserName>
+<Pwd>admin12345</Pwd>
+	<DataBase>kaaikani</DataBase>
+        <Port>3306</Port>
+</ConnInFo>
+  

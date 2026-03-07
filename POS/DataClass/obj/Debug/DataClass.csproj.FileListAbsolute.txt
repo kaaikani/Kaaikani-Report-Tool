@@ -1,0 +1,227 @@
+F:\Source\TextilePOS\POS\DataClass\bin\Debug\DataClass.dll
+F:\Source\TextilePOS\POS\DataClass\bin\Debug\DataClass.pdb
+F:\Source\TextilePOS\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+F:\Source\TextilePOS\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+F:\Source\TextilePOS\POS\DataClass\obj\Debug\DataClass.dll
+F:\Source\TextilePOS\POS\DataClass\obj\Debug\DataClass.pdb
+F:\Source\TextilePOS\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+F:\Source\HotelPOS\POS\DataClass\bin\Debug\DataClass.dll
+F:\Source\HotelPOS\POS\DataClass\bin\Debug\DataClass.pdb
+F:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+F:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+F:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+F:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.dll
+F:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.pdb
+E:\Source\HotelPOS\POS\DataClass\bin\Debug\DataClass.dll
+E:\Source\HotelPOS\POS\DataClass\bin\Debug\DataClass.pdb
+E:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+E:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+E:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+E:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.dll
+E:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Source\HotelPOS\POS\DataClass\bin\Debug\DataClass.dll
+C:\Source\HotelPOS\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.dll
+C:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.pdb
+G:\Source\HotelPOS\POS\DataClass\bin\Debug\DataClass.dll
+G:\Source\HotelPOS\POS\DataClass\bin\Debug\DataClass.pdb
+G:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+G:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+G:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+G:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.dll
+G:\Source\HotelPOS\POS\DataClass\obj\Debug\DataClass.pdb
+G:\Source\AmsaPOS\POS\DataClass\bin\Debug\DataClass.dll
+G:\Source\AmsaPOS\POS\DataClass\bin\Debug\DataClass.pdb
+G:\Source\AmsaPOS\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+G:\Source\AmsaPOS\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+G:\Source\AmsaPOS\POS\DataClass\obj\Debug\DataClass.dll
+G:\Source\AmsaPOS\POS\DataClass\obj\Debug\DataClass.pdb
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\DataClass.dll
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\DataClass.pdb
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\MySql.Data.dll
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\RestSharp.dll
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+G:\Source\Kaaikani\POS\DataClass\bin\Debug\RestSharp.xml
+G:\Source\Kaaikani\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+G:\Source\Kaaikani\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+G:\Source\Kaaikani\POS\DataClass\obj\Debug\DataClass.dll
+G:\Source\Kaaikani\POS\DataClass\obj\Debug\DataClass.pdb
+G:\Source\Kaaikani\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\bin\Debug\MySql.Data.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\DataClass.pdb
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\bin\Debug\RestSharp.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csprojResolveAssemblyReference.cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.Properties.Resources.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.csproj.GenerateResource.Cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\DataClass\obj\Debug\DataClass.pdb

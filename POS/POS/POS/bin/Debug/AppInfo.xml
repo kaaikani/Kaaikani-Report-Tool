@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AppInFo>
+	<MasDataBase>HotelMas</MasDataBase>
+	<DBServer>sardhar\SQLEXPRESS</DBServer>
+	<UserName>sa</UserName>	
+	<Password>networkcard</Password>
+        <BookId>0</BookId>
+        <PtsPrefix>VIP</PtsPrefix>
+<CompId>2</CompId>
+<IsAdmin>0</IsAdmin>
+	<WebDb>[216.157.145.69].pcworld_tct.dbo</WebDb>
+	<WebCon>data source=216.157.145.69;initial catalog=pcworld_tct;persist security info=False;user id=pcworld_tct123;workstation id=TEMPLECITY;packet size=4096;password=Tct123;</WebCon>
+<Smtp>data source=216.157.145.69;initial catalog=pcworld_tct;persist security info=False;user id=pcworld_tct123;workstation id=TEMPLECITY;packet size=4096;password=Tct123;</Smtp>
+<NoofClient>K8U/ZFbpqhOOZ+DRtzCY/g==</NoofClient>
+</AppInFo>
+  

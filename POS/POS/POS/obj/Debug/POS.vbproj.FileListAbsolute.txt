@@ -1,0 +1,981 @@
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmGrp2Mas.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmGrpMas.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.Frmopbal.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmSubGroup1.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmBalance.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmClsStkDet.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmDayBook.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmDayBookSingle.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmFind.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmJournal.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmLedger.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmOffLine.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPayment.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmProfit.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmProfitShare.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmReceipt.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmTrBal.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmBundle.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmAccMaster.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmMainBar.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmTagTray.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmRecEntry.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmSignMaster.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmCategory.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmBalanceReg.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmReceiptEntReg.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPopupSTGroup.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPopupItem1.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmReceiptEnt.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmReceiptEntry.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmItemRateUpdate.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmAnnex.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmCustomerPoints.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmDayBookEntry.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmDayBookLedger.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmSalRegcopy.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmStockRpt.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPurReg.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmSalReg.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmBarCodeNikhy.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmConversion.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPopupToItem.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPopupItem.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPopupLedger.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmCounterProcess.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmRecAllEntry.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmQuatation.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmStockUpdation.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmBackupDBs.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmBarcodeDesign.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmChangePass.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmCompany.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmConfiguration.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPointSettings.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPopup.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmGreetings.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmMessage.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmRateDet.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmUserCreation.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmMain.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmRetailCustomer.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmSupplier.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmCustomer.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmBrand.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmTax.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmLogin.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmSTGroup.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmProduct.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.Resources.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.UserControlTest.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmDsRPT.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.Form1.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmBarCode.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmView.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmPurchase.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmSales.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.FrmSalesOld.resources
+F:\Source\TextilePOS\POS\POS\IOS\obj\Debug\POS.vbproj.GenerateResource.Cache
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmAccMaster.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmMainBar.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmRecEntry.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmCategory.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupSize.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupSTGroup.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem1.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmReceiptEntry.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmAnnex.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmSalReg.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmBarCodeNikhy.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupToItem.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupLedger.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmBackupDBs.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmBarcodeDesign.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmCompany.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmConfiguration.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopup.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmGreetings.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmMessage.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmUserCreation.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmMain.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmSupplier.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmCustomer.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmBrand.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmTax.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmLogin.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmProduct.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.Resources.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.UserControlTest.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.Form1.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmBarCode.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmView.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\POS.exe.config
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\POS.exe
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\POS.pdb
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\POS.xml
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\BusinessClass.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\DataClass.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\DBAccess.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\DosPrintCommands.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\LaserPrinting.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\Tapi2Lib.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\TapiPhoneDialer.dll
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\BusinessClass.pdb
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.xml
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.xml
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.xml
+F:\Source\TextilePOS\POS\POS\POS\bin\Debug\DataClass.pdb
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.exe
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.xml
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.pdb
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupBrand.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupTax.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupUnit.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupCat.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmUnit.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPurchase.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmStockInward.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmStockOutward.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupSupplier.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmSales.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmCustomerMaster.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmSiteMaster.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmSupplierMaster.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupCustomer.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupRate.resources
+F:\Source\TextilePOS\POS\POS\POS\obj\Debug\POS.FrmPopupSite.resources
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.exe
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\UI Components.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.exe.config
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.pdb
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.xml
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\DBAccess.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\DosPrintCommands.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\LaserPrinting.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\Tapi2Lib.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\TapiPhoneDialer.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.xml
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.xml
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.xml
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmAccMaster.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTableMaster.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmWaiter.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPriceFix.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCustomerMaster.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSiteMaster.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSupplierMaster.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmUnit.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMainBar.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmRecEntry.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCategory.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmDetailSalReg.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCustomer.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupRate.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSite.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSupplier.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupUnit.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCat.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupTax.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupBrand.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSize.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSTGroup.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem1.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmReceiptEntry.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmAnnex.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSalReg.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarCodeNikhy.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupToItem.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupLedger.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPurchase.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSales.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockInward.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockOutward.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTable.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBackupDBs.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarcodeDesign.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCompany.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmConfiguration.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopup.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmGreetings.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMessage.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmUserCreation.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMain.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSupplier.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCustomer.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBrand.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTax.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmLogin.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmProduct.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.Resources.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.UserControlTest.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.Form1.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarCode.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmView.resources
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.exe
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.xml
+F:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.pdb
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\BusinessClass.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\DataClass.dll
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\BusinessClass.pdb
+F:\Source\HotelPOS\POS\POS\POS\bin\Debug\DataClass.pdb
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.exe.config
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.exe
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.xml
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.pdb
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.exe
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.pdb
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.xml
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\BusinessClass.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\DataClass.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\DBAccess.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\DosPrintCommands.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\LaserPrinting.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\Tapi2Lib.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\TapiPhoneDialer.dll
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\BusinessClass.pdb
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.xml
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.xml
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.xml
+E:\Source\HotelPOS\POS\POS\POS\bin\Debug\DataClass.pdb
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmAccMaster.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTableMaster.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmWaiter.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPriceFix.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCustomerMaster.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSiteMaster.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSupplierMaster.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmUnit.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMainBar.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmRecEntry.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCategory.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmDetailSalReg.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCustomer.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupRate.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSite.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSupplier.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupUnit.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCat.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupTax.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupBrand.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSize.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSTGroup.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem1.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmReceiptEntry.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmAnnex.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSalReg.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarCodeNikhy.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupToItem.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupLedger.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPurchase.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSales.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockInward.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockOutward.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTable.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBackupDBs.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarcodeDesign.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCompany.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmConfiguration.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopup.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmGreetings.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMessage.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmUserCreation.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMain.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSupplier.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCustomer.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBrand.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTax.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmLogin.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmProduct.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.Resources.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.UserControlTest.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.Form1.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarCode.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmView.resources
+E:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.exe
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.xml
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.pdb
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.exe
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.pdb
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.xml
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\BusinessClass.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\DBAccess.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\DosPrintCommands.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\LaserPrinting.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\Tapi2Lib.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\TapiPhoneDialer.dll
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\BusinessClass.pdb
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.xml
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.xml
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.xml
+C:\Source\HotelPOS\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmAccMaster.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTableMaster.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmWaiter.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPriceFix.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCustomerMaster.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSiteMaster.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSupplierMaster.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmUnit.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMainBar.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmRecEntry.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCategory.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmDetailSalReg.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCustomer.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupRate.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSite.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSupplier.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupUnit.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCat.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupTax.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupBrand.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSize.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSTGroup.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem1.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmReceiptEntry.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmAnnex.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSalReg.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarCodeNikhy.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupToItem.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupLedger.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPurchase.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSales.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockInward.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockOutward.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTable.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBackupDBs.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarcodeDesign.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCompany.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmConfiguration.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopup.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmGreetings.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMessage.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmUserCreation.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMain.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSupplier.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCustomer.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBrand.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTax.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmLogin.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmProduct.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.UserControlTest.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.Form1.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarCode.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmView.resources
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmRSales.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmAccMaster.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTableMaster.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmWaiter.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPriceFix.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCustomerMaster.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSiteMaster.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSupplierMaster.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmUnit.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMainBar.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmRecEntry.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCategory.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmDetailSalReg.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSalBillwiseReg.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockReg.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupWaiter.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCustomer.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupRate.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSite.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSupplier.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupUnit.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCat.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupTax.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupBrand.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSize.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSTGroup.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem1.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmReceiptEntry.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmAnnex.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSalReg.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarCodeNikhy.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupToItem.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopupLedger.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPurchase.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmKOTRSales.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmRSales.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSaleOrder.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSales.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockInward.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmStockOutward.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTable.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBackupDBs.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarcodeDesign.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCompany.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmConfiguration.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmPopup.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmGreetings.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMessage.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmUserCreation.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmMain.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmSupplier.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmCustomer.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBrand.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmTax.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmLogin.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmProduct.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.Resources.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.UserControlTest.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.Form1.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmBarCode.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.FrmView.resources
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.exe.config
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.exe
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.pdb
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\POS.xml
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\BusinessClass.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\DataClass.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\DBAccess.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\DosPrintCommands.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\LaserPrinting.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\RLComponents.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\Tapi2Lib.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\TapiPhoneDialer.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\GridStructures.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\PopupControl.dll
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\BusinessClass.pdb
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.xml
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.xml
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.xml
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.exe
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.xml
+G:\Source\HotelPOS\POS\POS\POS\obj\Debug\POS.pdb
+G:\Source\HotelPOS\POS\POS\POS\bin\Debug\DataClass.pdb
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\POS.exe.config
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.exe
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.xml
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.pdb
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\POS.exe
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\POS.pdb
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\POS.xml
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\BusinessClass.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\DataClass.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\DBAccess.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\DosPrintCommands.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\LaserPrinting.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\RLComponents.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\Tapi2Lib.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\TapiPhoneDialer.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\GridStructures.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\PopupControl.dll
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\BusinessClass.pdb
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.xml
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.xml
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.xml
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmAccMaster.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmTableMaster.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmWaiter.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPriceFix.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmCustomerMaster.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmSiteMaster.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmSupplierMaster.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmUnit.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmMainBar.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmRecEntry.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmCategory.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmDetailSalReg.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmSalBillwiseReg.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmStockReg.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupWaiter.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCustomer.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupRate.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSite.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSupplier.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupUnit.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupCat.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupTax.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupBrand.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSize.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupSTGroup.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem1.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmReceiptEntry.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmAnnex.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmSalReg.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmBarCodeNikhy.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupToItem.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupItem.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopupLedger.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPurchase.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmKOTRSales.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmRSales.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmSaleOrder.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmSales.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmStockInward.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmStockOutward.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmTable.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmBackupDBs.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmBarcodeDesign.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmCompany.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmConfiguration.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmPopup.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmGreetings.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmMessage.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmUserCreation.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmMain.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmSupplier.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmCustomer.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmBrand.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmTax.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmLogin.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmProduct.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.Resources.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.UserControlTest.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.Form1.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmBarCode.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.FrmView.resources
+G:\Source\AmsaPOS\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+G:\Source\AmsaPOS\POS\POS\POS\bin\Debug\DataClass.pdb
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.Resources.resources
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\POS.exe.config
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\POS.exe
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\POS.pdb
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\POS.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\DataClass.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\DosPrintCommands.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\LaserPrinting.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\RestClient.Net.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\RestSharp.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\RLComponents.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\Tapi2Lib.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\TapiPhoneDialer.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\Urls.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\MySql.Data.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\GridStructures.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\PopupControl.dll
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\CrystalDecisions.ReportSource.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\CrystalDecisions.Shared.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\CrystalDecisions.Windows.Forms.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\DataClass.pdb
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\RestClient.Net.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\RestSharp.xml
+G:\Source\Kaaikani\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.exe
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.xml
+G:\Source\Kaaikani\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\KaaikaniSource\KaaikaniSource\POS\POS\POS\bin\Debug\MySql.Data.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\dummy\KaaikaniSource\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Updated\KaaikaniSource\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\Kaaikani-Report-Tool-main (1)\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\GridStructures.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+G:\Source\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\ACER\Desktop\Kaaikani Report Tool\KK New Checking tool\KK New Checking tool\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+G:\Source\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\kaaikani\Downloads\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\POS.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Urls.dll
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\DataClass.pdb
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestClient.Net.Abstractions.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\RestSharp.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbprojResolveAssemblyReference.cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.Resources.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmDsRPT.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmCancelRpt.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.FrmOrderRpt.resources
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.vbproj.GenerateResource.Cache
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.xml
+C:\Users\kaaikani\Desktop\Kaaikani-Report-Tool-main\Kaaikani-Report-Tool-main\POS\POS\POS\obj\Debug\POS.pdb
