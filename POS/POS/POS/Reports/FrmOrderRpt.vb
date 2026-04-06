@@ -167,11 +167,9 @@ Public Class FrmOrderRpt
                             Dim dt As DataTable
                             Dim dataView As DataView = dtImport.DefaultView
                             If Not String.IsNullOrEmpty(rptLoad.Rows(i)("ItemName")) Then
-                                dataView.RowFilter = "SKU = '" & rptLoad.Rows(i)("PCODE").ToString().Trim() & "'"
-                                'dataView.RowFilter = "ItemName ='" + rptLoad.Rows(i)("ItemName").ToString().Trim() + "'"
-                                dt = dataView.ToTable
-                                If dt.Rows.Count > 0 Then
-                                    rptLoad.Rows(i)("TamilName") = dt.Rows(0)("TamilName")
+                              Dim matchRow As DataRow = FindImportRow(rptLoad.Rows(i)("PCODE").ToString().Trim())
+                                If matchRow IsNot Nothing Then
+                                    rptLoad.Rows(i)("TamilName") = matchRow("TamilName").ToString().Trim()
                                 End If
                             End If
                         End If
@@ -251,7 +249,20 @@ Public Class FrmOrderRpt
                     If paymentMethod = "razorpay-payment" Then
                         isBillPaid = True
                     End If
-
+                    Dim payModeCheck As String = ""
+                    If ReportTable.Columns.Contains("PaymentMode") Then
+                        Dim pmObj As Object = ReportTable.Rows(i)("PaymentMode")
+                        If pmObj IsNot Nothing AndAlso Not IsDBNull(pmObj) Then
+                            payModeCheck = pmObj.ToString() _
+                                               .ToLower() _
+                                               .Replace(" ", "") _
+                                               .Replace(".", "") _
+                                               .Trim()
+                        End If
+                    End If
+                    If payModeCheck.Contains("billpaid") Then
+                        isBillPaid = True
+                    End If
                     ' ---- FINAL OUTPUT ----
                     If isBillPaid Then
                         rptLoad.Rows(i)("PaymentStatus") = "Bill Paid"
@@ -320,12 +331,11 @@ Public Class FrmOrderRpt
                                 'dataView.RowFilter = "ItemName like * '" & rptLoad.Rows(i)("ItemName").ToString().Trim() & "'"
                                 'dataView.RowFilter = "ItemName LIKE '%" + rptLoad.Rows(i)("ItemName").ToString().Trim() + "%'"
                                 'dataView.RowFilter = "ItemName ='" + rptLoad.Rows(i)("ItemName").ToString().Trim() + "'"
-                                dataView.RowFilter = "SKU = '" & rptLoad.Rows(i)("PCODE").ToString().Trim() & "'"
-                                dt = dataView.ToTable
-                                If dt.Rows.Count > 0 Then
-                                    rptLoad.Rows(i)("TamilName") = dt.Rows(0)("TamilName").ToString().Trim()
-                                    rptLoad.Rows(i)("Category") = dt.Rows(0)("Category").ToString().Trim()
-                                    rptLoad.Rows(i)("OrdNo") = dt.Rows(0)("OrdNo").ToString().Trim()
+                                Dim matchRow As DataRow = FindImportRow(rptLoad.Rows(i)("PCODE").ToString().Trim())
+                                If matchRow IsNot Nothing Then
+                                    rptLoad.Rows(i)("TamilName") = matchRow("TamilName").ToString().Trim()
+                                    rptLoad.Rows(i)("Category") = matchRow("Category").ToString().Trim()
+                                    rptLoad.Rows(i)("OrdNo") = matchRow("OrdNo").ToString().Trim()
                                 End If
                             End If
                         End If
@@ -342,7 +352,7 @@ Public Class FrmOrderRpt
         End Try
     End Sub
     Function readFromUpdatePriceExcel(ByVal path As String) As Boolean
-        Dim connstring As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + path + ";Extended Properties=""Excel 8.0;HDR=YES;"""
+        Dim connstring As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & path & ";Extended Properties=""Excel 8.0;HDR=YES;IMEX=1;"""
         Dim status As Boolean = True
         Dim pram As OleDbParameter
         Dim dr As DataRow
@@ -436,7 +446,7 @@ Public Class FrmOrderRpt
         Return status
     End Function
     Function readFromExcel(ByVal path As String) As DataTable
-        Dim connstring As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + path + ";Extended Properties=""Excel 8.0;HDR=YES;"""
+        Dim connstring As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & path & ";Extended Properties=""Excel 8.0;HDR=YES;IMEX=1;"""
 
         Dim pram As OleDbParameter
         Dim dr As DataRow
@@ -952,7 +962,20 @@ Public Class FrmOrderRpt
                 If paymentMethod = "razorpay-payment" Then
                     isBillPaid = True
                 End If
-
+                Dim payModeCheck As String = ""
+                If dtb1.Columns.Contains("PaymentMode") Then
+                    Dim pmObj As Object = dtb1.Rows(i)("PaymentMode")
+                    If pmObj IsNot Nothing AndAlso Not IsDBNull(pmObj) Then
+                        payModeCheck = pmObj.ToString() _
+                                           .ToLower() _
+                                           .Replace(" ", "") _
+                                           .Replace(".", "") _
+                                           .Trim()
+                    End If
+                End If
+                If payModeCheck.Contains("billpaid") Then
+                    isBillPaid = True
+                End If
                 If isBillPaid Then
                     tblDtDel.Rows(i)("PaymentStatus") = "Bill Paid"
                 Else
@@ -1069,11 +1092,22 @@ Public Class FrmOrderRpt
     End Sub
 
     Private Sub btnBillPrint_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBillPrint.Click
-        'For i As Integer = 0 To dgvReport.Rows.Count - 1
-        '    Cr_OrderBill(dgvReport.Item("Code", i).Value.ToString())
-        'Next
-        Cr_OrderBill("")
+        If Not rdbDetail.Checked Then
+            MsgBox("Please select 'Detail' view before printing Bills.", MsgBoxStyle.Information, "Bill Print")
+            Exit Sub
+        End If
 
+        If rptLoad Is Nothing OrElse rptLoad.Rows.Count = 0 Then
+            MsgBox("No data found. Please click Process first.", MsgBoxStyle.Information, "Bill Print")
+            Exit Sub
+        End If
+
+        If Not rptLoad.Columns.Contains("Customer") OrElse Not rptLoad.Columns.Contains("CellNo") Then
+            MsgBox("Customer details not loaded. Please select Detail view and click Process.", MsgBoxStyle.Information, "Bill Print")
+            Exit Sub
+        End If
+
+        Cr_OrderBill("")
     End Sub
 
     Private Sub chkAll_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkAll.CheckedChanged
@@ -1210,12 +1244,11 @@ Public Class FrmOrderRpt
                                     'dataView.RowFilter = "ItemName like * '" & rptLoad.Rows(i)("ItemName").ToString().Trim() & "'"
                                     'dataView.RowFilter = "ItemName LIKE '%" + rptLoad.Rows(i)("ItemName").ToString().Trim() + "%'"
                                     ' dataView.RowFilter = "ItemName ='" + rptLoad.Rows(i)("ItemName").ToString().Trim() + "'"
-                                    dataView.RowFilter = "SKU = '" & rptLoad.Rows(i)("PCODE").ToString().Trim() & "'"
-                                    dt = dataView.ToTable
-                                    If dt.Rows.Count > 0 Then
-                                        rptLoad.Rows(i)("TamilName") = dt.Rows(0)("TamilName").ToString().Trim()
-                                        rptLoad.Rows(i)("Category") = dt.Rows(0)("Category").ToString().Trim()
-                                        rptLoad.Rows(i)("OrdNo") = dt.Rows(0)("OrdNo").ToString().Trim()
+                                    Dim matchRow As DataRow = FindImportRow(rptLoad.Rows(i)("PCODE").ToString().Trim())
+                                    If matchRow IsNot Nothing Then
+                                        rptLoad.Rows(i)("TamilName") = matchRow("TamilName").ToString().Trim()
+                                        rptLoad.Rows(i)("Category") = matchRow("Category").ToString().Trim()
+                                        rptLoad.Rows(i)("OrdNo") = matchRow("OrdNo").ToString().Trim()
                                     End If
                                 End If
                             End If
@@ -1316,15 +1349,13 @@ Public Class FrmOrderRpt
                             'dataView.RowFilter = "ItemName like * '" & rptLoad.Rows(i)("ItemName").ToString().Trim() & "'"
                             'dataView.RowFilter = "ItemName LIKE '%" + rptLoad.Rows(i)("ItemName").ToString().Trim() + "%'"
                             'dataView.RowFilter = "ItemName ='" + rptLoad.Rows(i)("ItemName").ToString().Trim() + "'"
-                            dataView.RowFilter = "SKU ='" + rptLoad.Rows(i)("PCode").ToString().Trim() + "'"
-                            dt = dataView.ToTable
-
-                            If dt.Rows.Count > 0 Then
-                                rptLoad.Rows(i)("TamilName") = dt.Rows(0)("TamilName").ToString().Trim()
-                                rptLoad.Rows(i)("GroupName") = dt.Rows(0)("GroupName").ToString().Trim()
-                                rptLoad.Rows(i)("Category") = dt.Rows(0)("Category").ToString().Trim()
-                                rptLoad.Rows(i)("OrdNo") = dt.Rows(0)("OrdNo").ToString().Trim()
-                                rptLoad.Rows(i)("Qty") = Val(rptLoad.Rows(i)("Qty")) * Val(dt.Rows(0)("Weight").ToString())
+                           Dim matchRow As DataRow = FindImportRow(rptLoad.Rows(i)("PCode").ToString().Trim())
+                            If matchRow IsNot Nothing Then
+                                rptLoad.Rows(i)("TamilName") = matchRow("TamilName").ToString().Trim()
+                                rptLoad.Rows(i)("GroupName") = matchRow("GroupName").ToString().Trim()
+                                rptLoad.Rows(i)("Category") = matchRow("Category").ToString().Trim()
+                                rptLoad.Rows(i)("OrdNo") = matchRow("OrdNo").ToString().Trim()
+                                rptLoad.Rows(i)("Qty") = Val(rptLoad.Rows(i)("Qty")) * Val(matchRow("Weight").ToString())
                             End If
                         End If
                     End If
@@ -1402,4 +1433,14 @@ Public Class FrmOrderRpt
             End If
         End If
     End Sub
+    Private Function FindImportRow(ByVal pCode As String) As DataRow
+        If dtImport Is Nothing OrElse dtImport.Rows.Count = 0 Then Return Nothing
+        For Each row As DataRow In dtImport.Rows
+            If row("SKU").ToString().Trim() = pCode.Trim() Then
+                Return row
+            End If
+        Next
+        Return Nothing
+    End Function
+
 End Class

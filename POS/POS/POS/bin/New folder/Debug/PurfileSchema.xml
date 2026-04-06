@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="PurDet">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PurId" type="xs:int" default="0" />
+                <xs:element name="Itemcode" type="xs:string" default="" />
+                <xs:element name="CategoryId" type="xs:short" default="0" />
+                <xs:element name="Category" type="xs:string" default="" />
+                <xs:element name="ItemId" type="xs:int" default="0" />
+                <xs:element name="ItemName" type="xs:string" default="" />
+                <xs:element name="Qty" type="xs:decimal" default="0" />
+                <xs:element name="Free" type="xs:decimal" default="0" />
+                <xs:element name="PurRate" type="xs:decimal" default="0" />
+                <xs:element name="SaleRate" type="xs:decimal" default="0" />
+                <xs:element name="Amount" type="xs:decimal" default="0" />
+                <xs:element name="TaxId" type="xs:short" default="0" />
+                <xs:element name="TaxName" type="xs:string" default="" />
+                <xs:element name="Taxper" type="xs:decimal" default="0" />
+                <xs:element name="TaxAmt" type="xs:decimal" default="0" />
+                <xs:element name="SGSTPer" type="xs:decimal" default="0" />
+                <xs:element name="SGSTAmt" type="xs:decimal" default="0" />
+                <xs:element name="CGSTPer" type="xs:decimal" default="0" />
+                <xs:element name="CGSTAmt" type="xs:decimal" default="0" />
+                <xs:element name="SlNo" type="xs:decimal" default="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <PurDet>
+    <PurId>0</PurId>
+    <Itemcode>535</Itemcode>
+    <CategoryId>1</CategoryId>
+    <Category>CHINESE</Category>
+    <ItemId>535</ItemId>
+    <ItemName>BOOST</ItemName>
+    <Qty>13</Qty>
+    <Free>0</Free>
+    <PurRate>0.00</PurRate>
+    <SaleRate>20</SaleRate>
+    <Amount>0.00</Amount>
+    <TaxId>2</TaxId>
+    <TaxName>GST 5%</TaxName>
+    <Taxper>5.00</Taxper>
+    <TaxAmt>0</TaxAmt>
+    <SGSTPer>2.50</SGSTPer>
+    <SGSTAmt>0.00000</SGSTAmt>
+    <CGSTPer>2.50</CGSTPer>
+    <CGSTAmt>0.00000</CGSTAmt>
+    <SlNo>0</SlNo>
+  </PurDet>
+</NewDataSet>

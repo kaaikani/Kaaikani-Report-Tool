@@ -684,6 +684,7 @@ namespace DataClass
                     qry += " INNER JOIN wow_vendure.order_channels_channel ch ";
                     qry += " ON ch.OrderId = O.Id ";
                     qry += " AND ch.ChannelId = " + locationId;//       -- ✅ ensures only one matching row per order
+                    qry += " LEFT JOIN wow_vendure.payment py ON py.id = (SELECT MAX(p2.id) FROM wow_vendure.payment p2 WHERE p2.orderId = O.id AND p2.state IN ('Settled','Authorized')) ";
                     qry += " WHERE ";
                     qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                     qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)";
@@ -753,6 +754,7 @@ namespace DataClass
                         qry += " INNER JOIN wow_vendure.order_channels_channel ch ";
                         qry += " ON ch.OrderId = O.Id ";
                         qry += " AND ch.ChannelId = " + locationId;//       -- ✅ ensures only one matching row per order
+                        qry += " LEFT JOIN wow_vendure.payment py ON py.id = (SELECT MAX(p2.id) FROM wow_vendure.payment p2 WHERE p2.orderId = O.id AND p2.state IN ('Settled','Authorized')) ";
                         qry += " WHERE ";
                         qry += "  O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                         qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL) ";
@@ -863,14 +865,14 @@ namespace DataClass
                 qry += " INNER JOIN " + CommonView.DataBase + ".shipping_method_translation st ON sl.shippingmethodid = st.Id ";
                 qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_price op ON op.variantid = OL.productvariantid AND op.variantid = P.id ";
                 qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
-                qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
+                qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.id = (SELECT MAX(p2.id) FROM " + CommonView.DataBase + ".payment p2 WHERE p2.orderId = O.id AND p2.state IN ('Settled','Authorized')) ";
                 qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
                 qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
                 qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";
 
                 //qry += " WHERE customFieldsPlacedatistformatted BETWEEN '" + fDt.ToString("yyyy/MM/dd") + " 00:00:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
                 qry += " Where O.OrderPlacedAt between '" + fDt.ToString("yyyy/MM/dd") + " 18:30:00' AND '" + tDt.ToString("yyyy/MM/dd") + " 23:59:59' ";
-                qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)  and O.State not in ('DELIVERED','CANCELLED','AddingItems') and ";
+                qry += " AND  (O.customFieldsCancellationreason = '' OR O.customFieldsCancellationreason IS NULL)  and O.State not in ('DELIVERED','CANCELLED','AddingItems','CancellationRequested') and ";
                 //changed - Added Coimbatore (locationId == 6) Morning delivery filter support
                 if (locationId == 4)
                 { qry += "  (st.Name='Tomorrow Morning Delivery (Rs.40 incl.Tax)' or st.name='Day After Tomorrow – Morning Delivery (Rs.10 incl. tax)') and "; }
@@ -905,7 +907,7 @@ namespace DataClass
                     qry += " INNER JOIN " + CommonView.DataBase + ".shipping_method_translation st ON sl.shippingmethodid = st.Id ";
                     qry += " INNER JOIN " + CommonView.DataBase + ".product_variant_price op ON op.variantid = OL.productvariantid AND op.variantid = P.id ";
                     qry += " INNER JOIN " + CommonView.DataBase + ".product_variant AS pv ON pv.id = OL.productVariantId ";
-                    qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.OrderId = O.Id ";
+                    qry += " LEFT JOIN " + CommonView.DataBase + ".payment py ON py.id = (SELECT MAX(p2.id) FROM " + CommonView.DataBase + ".payment p2 WHERE p2.orderId = O.id AND p2.state IN ('Settled','Authorized')) ";
                     qry += " LEFT JOIN " + CommonView.DataBase + ".order_channels_channel ch ON O.Id = ch.OrderId ";
                     qry += " LEFT JOIN " + CommonView.DataBase + ".order_modification om ON O.Id = om.OrderId ";
                     qry += " LEFT JOIN (SELECT he1.orderId, he1.data FROM " + CommonView.DataBase + ".history_entry he1 INNER JOIN (SELECT orderId, MAX(id) as maxId FROM " + CommonView.DataBase + ".history_entry WHERE type='ORDER_NOTE' GROUP BY orderId) he2 ON he1.orderId = he2.orderId AND he1.id = he2.maxId WHERE he1.type='ORDER_NOTE') he ON O.Id = he.orderId ";

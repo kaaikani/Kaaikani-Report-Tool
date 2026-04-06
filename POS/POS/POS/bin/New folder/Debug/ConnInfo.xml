@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ConnInFo>
+	<DBServer>localhost</DBServer>
+	<DataBase>kaaikani</DataBase>
+	<UserId>root</UserId>
+<Pwd>networkcard</Pwd>
+        <Port>3306</Port>
+       
+</ConnInFo>
+  

@@ -1,0 +1,115 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="SalDet">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SalId" type="xs:int" default="0" />
+                <xs:element name="Itemcode" type="xs:string" default="" />
+                <xs:element name="ItemId" type="xs:int" default="0" />
+                <xs:element name="ItemName" type="xs:string" default="" />
+                <xs:element name="Descript" type="xs:string" default="" />
+                <xs:element name="CategoryId" type="xs:short" default="0" />
+                <xs:element name="Category" type="xs:string" default="" />
+                <xs:element name="Qty" type="xs:decimal" default="0" />
+                <xs:element name="Free" type="xs:decimal" default="0" />
+                <xs:element name="Rate" type="xs:decimal" default="0" />
+                <xs:element name="Amount" type="xs:decimal" default="0" />
+                <xs:element name="TaxId" type="xs:short" default="0" />
+                <xs:element name="TaxName" type="xs:string" default="" />
+                <xs:element name="TaxPer" type="xs:decimal" default="0" />
+                <xs:element name="TaxAmt" type="xs:decimal" default="0" />
+                <xs:element name="SGSTPer" type="xs:decimal" default="0" />
+                <xs:element name="SGSTAmt" type="xs:decimal" default="0" />
+                <xs:element name="CGSTPer" type="xs:decimal" default="0" />
+                <xs:element name="CGSTAmt" type="xs:decimal" default="0" />
+                <xs:element name="SurChargeAmt" type="xs:int" default="0" />
+                <xs:element name="IncAmt" type="xs:decimal" default="0" />
+                <xs:element name="TamilName" type="xs:string" default="" />
+                <xs:element name="SNo" type="xs:decimal" default="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <SalDet>
+    <SalId>625</SalId>
+    <Itemcode>1</Itemcode>
+    <ItemId>1</ItemId>
+    <ItemName>IDLY</ItemName>
+    <Descript />
+    <CategoryId>1</CategoryId>
+    <Category>SHAWARMA</Category>
+    <Qty>1.000</Qty>
+    <Free>0.000</Free>
+    <Rate>10.00</Rate>
+    <Amount>9.52</Amount>
+    <TaxId>2</TaxId>
+    <TaxName>GST 5%</TaxName>
+    <TaxPer>5.00</TaxPer>
+    <TaxAmt>0.48</TaxAmt>
+    <SGSTPer>2.50</SGSTPer>
+    <SGSTAmt>0.24</SGSTAmt>
+    <CGSTPer>2.50</CGSTPer>
+    <CGSTAmt>0.24</CGSTAmt>
+    <SurChargeAmt>0</SurChargeAmt>
+    <IncAmt>10.00</IncAmt>
+    <TamilName>இட்லி</TamilName>
+    <SNo>1.00</SNo>
+  </SalDet>
+  <SalDet>
+    <SalId>625</SalId>
+    <Itemcode>13</Itemcode>
+    <ItemId>13</ItemId>
+    <ItemName>PAROTTA</ItemName>
+    <Descript />
+    <CategoryId>0</CategoryId>
+    <Category>NA</Category>
+    <Qty>1.000</Qty>
+    <Free>0.000</Free>
+    <Rate>15.00</Rate>
+    <Amount>15.00</Amount>
+    <TaxId>1</TaxId>
+    <TaxName>EXCEMPTED TAX</TaxName>
+    <TaxPer>0.00</TaxPer>
+    <TaxAmt>0.00</TaxAmt>
+    <SGSTPer>0.00</SGSTPer>
+    <SGSTAmt>0.00</SGSTAmt>
+    <CGSTPer>0.00</CGSTPer>
+    <CGSTAmt>0.00</CGSTAmt>
+    <SurChargeAmt>0</SurChargeAmt>
+    <IncAmt>15.00</IncAmt>
+    <TamilName>புரோட்டா</TamilName>
+    <SNo>2.00</SNo>
+  </SalDet>
+  <SalDet>
+    <SalId>625</SalId>
+    <Itemcode>13</Itemcode>
+    <ItemId>13</ItemId>
+    <ItemName>PAROTTA</ItemName>
+    <Descript />
+    <CategoryId>0</CategoryId>
+    <Category>NA</Category>
+    <Qty>-1.000</Qty>
+    <Free>0.000</Free>
+    <Rate>15.00</Rate>
+    <Amount>-15.00</Amount>
+    <TaxId>1</TaxId>
+    <TaxName>EXCEMPTED TAX</TaxName>
+    <TaxPer>0.00</TaxPer>
+    <TaxAmt>0.00</TaxAmt>
+    <SGSTPer>0.00</SGSTPer>
+    <SGSTAmt>0.00</SGSTAmt>
+    <CGSTPer>0.00</CGSTPer>
+    <CGSTAmt>0.00</CGSTAmt>
+    <SurChargeAmt>0</SurChargeAmt>
+    <IncAmt>-15.00</IncAmt>
+    <TamilName>புரோட்டா</TamilName>
+    <SNo>3.00</SNo>
+  </SalDet>
+</NewDataSet>
